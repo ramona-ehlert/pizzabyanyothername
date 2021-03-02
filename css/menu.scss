@@ -1,0 +1,27 @@
+@import '_globals.scss';
+@import '_header.scss';
+
+body {
+    background-color: #ffeded;
+}
+.InnerMenuNavigation {
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 280px;
+}
+.menudivdiv {
+    background-color: $cream;
+    height: 60px;
+    width: 40px;
+    border-radius: 30px;
+}
+
+
+//  .upperPageDecoration {
+//      height: 400px;
+//      width: 100vw;
+//      background-color: #a0b7a4;
+//      position: absolute;
+//      z-index: -50;
+//  }
