@@ -11,6 +11,10 @@ body {
   color: #1e2744;
 }
 
+h1, h2, h3, h4 {
+  font-family: 'Open Sans', 'sans-serif';
+}
+
 a {
   color: #1e2744;
 }
@@ -24,6 +28,10 @@ body {
   font-family: 'Belleza', sans-serif;
   background-color: #ffede1;
   color: #1e2744;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Open Sans', 'sans-serif';
 }
 
 a {

@@ -21,9 +21,99 @@
     <meta property="og:title" content="Pizza by Any Other Name Restaurant" />
     <meta property="og:description" content="Delicous pizza and pasta, view our menu and more." />
     <title>Entree Menu</title>
-
+    <link rel="stylesheet" href="../../css/menu.css">
 </head>
 <body>
-    
+    <header>
+        <div class="headerGrid">
+            <nav>
+                <div id="mobile-hamburger-menu">
+                    <input type="checkbox" name="mobile-menu-checkbox" id="mobile-menu-checkbox">
+
+                    <div id="mobile-hamburger-container">
+                        <span id="mobile-line-1" class="mobile-hamburger-line"></span>
+                        <span id="mobile-line-2" class="mobile-hamburger-line"></span>
+                        <span id="mobile-line-3" class="mobile-hamburger-line"></span>
+                    </div>
+
+                    <div id="mobile-header-menu">
+                        <nav>
+                            <a href="../../index.html">Home</a>
+                            <a href="menuLanding.html">Menu</a>
+                            <a href="./menuPizza.html" class="foodMenuNavIndented">Pizza</a>
+                            <a href="./menuPasta.html" class="foodMenuNavIndented">Pasta</a>
+                            <a href="./menuEntrees.html" class="foodMenuNavIndented">Entrees</a>
+                
+                            <a href="./menuDrink.html" class="foodMenuNavIndented">Wine and Beer</a>
+                            <a href="../reservations.html">Reservations</a>
+                            <a href="../location.html">Location</a>
+                            <a href="../aboutUs.html">About Us</a>
+                            <a href="../catering.html">Catering</a>
+
+                        </nav>
+
+                    </div>
+            </nav>
+            <div class="headerLogo">
+                <img src="../../media/PizzabyAnyOtherNameLogo.jpg"
+                    alt="The logo for pizza by any other name, a cartoon pizza">
+            </div>
+            <div class="MobileContactPhone">
+                <!-- <input type="checkbox" name="mobile-menu-checkbox" id="contact-us-checkbox"> -->
+                <img src="../../media/contactUs.png" alt="a phone and an envelope. Contact Us.">
+                <a href="">403 555 5555</a>
+            </div>
+        </div>
+        <div class="banner">
+            <img src="../../media/headerPizzaBanner.png" alt="">
+            <p>Photo by
+                <a href="https://www.pexels.com/photo/person-holding-pizza-on-wooden-board-3762075/">Horizon
+                </a>Content from <a
+                    href="https://www.pexels.com/photo/person-holding-pizza-on-wooden-board-3762075/">Pexels</a>
+            </p>
+        </div>
+
+
+
+    </header>
+    <nav class="InnerMenuNavigation">
+
+        <div class="backArrow">
+            <a href="./menuLanding.html"></a>
+            <img src="../../media/goBackArrow.svg" alt="back arrow icon" id="menuBackArrow">
+        </div>
+
+        <div class="InnerMenuNavigationButton">
+
+            <img src="../../media/pastaLogo.svg" alt="three pasta noodles logo">
+
+            <a href="menuPasta.html"></a>
+            <p>Pasta</p>
+        </div>
+        <div class="InnerMenuNavigationButton">
+
+            <img src="../../media/pizzaMenuNavLogo.svg" alt="a pizza slice logo">
+
+            <a href="menuPizza.html"></a>
+            <p>Pizza</p>
+        </div>
+        <div class="InnerMenuNavigationButton">
+
+            <img src="../../media/entreeLogo.svg" alt="a roast chicken logo">
+
+            <a href="menuEntrees.html"></a>
+            <p>Entrees</p>
+        </div>
+
+        <div class="InnerMenuNavigationButton">
+
+            <img src="../../media/wineLogo.svg" alt="a wine bottle and glass logo">
+
+            <a href="menuDrink.html"></a>
+            <p>Drinks</p>
+        </div>
+
+
+    </nav>
 </body>
 </html>
