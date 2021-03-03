@@ -8,21 +8,25 @@ $green: #a0b7a4;
 $white: #fdf5ed;
 $red: #e2866d;
 $navy: #1e2744;
+$boxShadow: rgb(207, 194, 177);
 
 
 @import url('https://fonts.googleapis.com/css2?family=Belleza&family=Open+Sans&display=swap');
 
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Belleza', sans-serif;
     background-color: $cream;
     color: $navy;
 }
-h1,h2,h3,h4 {
-    font-family: 'Belleza', sans-serif;
+
+a {
+    color: $navy;
+    
 }
 
 @mixin centeredGrid {
     display: grid;
-    place-items: center;
+    justify-items: center;
+    align-items: center;
 }
 

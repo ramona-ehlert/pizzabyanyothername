@@ -1,23 +1,42 @@
 @import url("https://fonts.googleapis.com/css2?family=Belleza&family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Belleza&family=Open+Sans&display=swap");
 * {
   margin: 0;
   padding: 0;
 }
 
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Belleza', sans-serif;
   background-color: #ffede1;
   color: #1e2744;
 }
 
-h1, h2, h3, h4 {
+a {
+  color: #1e2744;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
   font-family: 'Belleza', sans-serif;
+  background-color: #ffede1;
+  color: #1e2744;
+}
+
+a {
+  color: #1e2744;
 }
 
 .headerGrid {
   display: -ms-grid;
   display: grid;
-  place-items: center;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -ms-grid-columns: 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr;
 }
@@ -58,6 +77,7 @@ h1, h2, h3, h4 {
   width: 40px;
   height: 4px;
   background-color: #1e2744;
+  opacity: .8;
 }
 
 #mobile-hamburger-menu #mobile-header-menu {
@@ -67,10 +87,11 @@ h1, h2, h3, h4 {
   width: 50vw;
   height: 80vh;
   background-color: #a0b7a4;
-  top: -80vh;
+  top: -100vh;
   opacity: 1;
   right: 0;
-  z-index: 5;
+  z-index: 11;
+  min-height: 500px;
 }
 
 #mobile-hamburger-menu #mobile-header-menu nav {
@@ -79,13 +100,58 @@ h1, h2, h3, h4 {
 }
 
 #mobile-hamburger-menu #mobile-header-menu nav a {
+  margin: 2vh 20px;
   color: #ffede1;
   text-decoration: none;
-  font-weight: bold;
+  font-size: 18px;
+}
+
+#mobile-hamburger-menu #mobile-header-menu nav .foodMenuNavIndented {
+  font-size: 12px;
+  margin: 0px 0px 10px 50px;
+}
+
+.headerLogo {
+  margin-top: 20px;
 }
 
 .headerLogo img {
   width: 60vw;
+}
+
+.MobileContactPhone {
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-grid-columns: 1fr 2fr;
+      grid-template-columns: 1fr 2fr;
+  position: absolute;
+  right: -5px;
+  top: 10px;
+  width: 120px;
+  height: 30px;
+  background-color: #ffede1;
+  -webkit-box-shadow: -5px 0px 10px #cfc2b1;
+          box-shadow: -5px 0px 10px #cfc2b1;
+  border-radius: 10px;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  padding-right: 10px;
+  position: fixed;
+  z-index: 10;
+}
+
+.MobileContactPhone a {
+  font-size: 12px;
+  margin-right: 5px;
+  color: #e2866d;
+}
+
+.MobileContactPhone img {
+  width: 20px;
 }
 
 .banner img {
@@ -94,23 +160,52 @@ h1, h2, h3, h4 {
   z-index: -5;
 }
 
-body {
-  background-color: #ffeded;
+.banner p {
+  position: absolute;
+  right: 20px;
+  font-size: 8px;
 }
 
 .InnerMenuNavigation {
   display: -ms-grid;
   display: grid;
-  place-items: center;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -ms-grid-columns: 1fr 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr 1fr;
-  width: 280px;
+  margin: 50px 10px 0px;
 }
 
-.menudivdiv {
-  background-color: #ffede1;
-  height: 60px;
-  width: 40px;
+.InnerMenuNavigation .InnerMenuNavigationButton {
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #fdf5ed;
+  height: 90px;
+  width: 50px;
   border-radius: 30px;
+  -webkit-box-shadow: 0px 0px 20px #cfc2b1;
+          box-shadow: 0px 0px 20px #cfc2b1;
+  padding: 5px;
+}
+
+.InnerMenuNavigation .InnerMenuNavigationButton a {
+  height: 90px;
+  width: 50px;
+  position: absolute;
+}
+
+.InnerMenuNavigation .InnerMenuNavigationButton img {
+  width: 40px;
+}
+
+.InnerMenuNavigation .InnerMenuNavigationButton p {
+  font-size: 12px;
+  margin-top: -20px;
 }
 /*# sourceMappingURL=menu.css.map */
