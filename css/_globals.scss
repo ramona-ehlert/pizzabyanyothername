@@ -4,9 +4,11 @@
 }
 
 $cream: #ffede1;
-$green: #a0b7a4;
+
 $white: #fdf5ed;
+$green: #a0b7a4;
 $red: #e2866d;
+
 $navy: #1e2744;
 $boxShadow: rgb(207, 194, 177);
 
@@ -34,3 +36,15 @@ a {
     align-items: center;
 }
 
+
+
+.citation {
+        position: absolute;
+        right: 20px;
+        font-size: 8px;
+        font-family: 'open-sans', 'sans-serif';
+    a {
+        font-weight: bolder;
+        text-decoration: none;
+    }
+    }

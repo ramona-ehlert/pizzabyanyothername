@@ -35,19 +35,19 @@
 }
 }
 .backArrow {
-    width: 40px;
-    height: 40px;
+    width: 25px;
+    height: 25px;
     border-radius: 50%;
     background-color: $white;
     box-shadow: 0 0 10px $boxShadow;
     position: absolute;
-    top: 380px;
-    left: 35px;
+    top: 385px;
+    left: 50px;
     @include centeredGrid;
     
     a {
-        width: 40px;
-        height: 40px;
+        width: 25px;
+        height: 25px;
         position: absolute;
         
     }
@@ -55,7 +55,7 @@
   
 }
 #menuBackArrow {
-    width: 30px;
+    width: 18px;
 }
 
 //  .upperPageDecoration {

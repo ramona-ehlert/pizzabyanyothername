@@ -1,9 +1,12 @@
 @import '_globals.scss';
 
+
+
 .headerGrid {
     @include centeredGrid;
     grid-template-columns: 1fr 1fr 1fr;
 }
+
 
 #mobile-hamburger-menu {
     margin: -70px -40px 0px 0px;
@@ -39,10 +42,11 @@
     #mobile-header-menu {
         transition: all 0.5s ease-in-out;
         position: absolute;
-        width: 50vw;
-        height: 80vh;
+        width: 70vw;
+        height: 100vh;
+        padding-top: 20px;
         background-color: $green;
-        top: -100vh;
+        top: -130vh;
         opacity: 1;
         right: 0;
         z-index: 11;
@@ -50,7 +54,7 @@
         // padding: 20px;
         nav {
             display: grid;
-           
+            
             a {
                 margin: 2vh 20px;
                 color: $cream;
@@ -59,16 +63,16 @@
             }
             .foodMenuNavIndented {
                 font-size: 12px;
-                margin: 0px 0px 10px 50px;
+                margin: 10px 0px 0px 50px;
             }
         }
     }
 }
 
 .headerLogo {
-    margin-top: 20px;
+    margin: 30px 0;
     img {
-        width: 60vw;
+        width: 70vw;
     }
 }
 .MobileContactPhone {
@@ -104,9 +108,11 @@
         opacity: 70%;
         z-index: -5;
     }
-    p {
-        position: absolute;
-        right: 20px;
-        font-size: 8px;
+}
+
+@media only screen and (min-width: 600px) {
+    .MobileContactPhone {
+        a {pointer-events: none;
+        text-decoration: none;}
     }
 }

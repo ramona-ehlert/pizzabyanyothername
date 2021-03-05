@@ -19,6 +19,18 @@ a {
   color: #1e2744;
 }
 
+.citation {
+  position: absolute;
+  right: 20px;
+  font-size: 8px;
+  font-family: 'open-sans', 'sans-serif';
+}
+
+.citation a {
+  font-weight: bolder;
+  text-decoration: none;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -36,6 +48,18 @@ h1, h2, h3, h4 {
 
 a {
   color: #1e2744;
+}
+
+.citation {
+  position: absolute;
+  right: 20px;
+  font-size: 8px;
+  font-family: 'open-sans', 'sans-serif';
+}
+
+.citation a {
+  font-weight: bolder;
+  text-decoration: none;
 }
 
 .headerGrid {
@@ -92,10 +116,11 @@ a {
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
   position: absolute;
-  width: 50vw;
-  height: 80vh;
+  width: 70vw;
+  height: 100vh;
+  padding-top: 20px;
   background-color: #a0b7a4;
-  top: -100vh;
+  top: -130vh;
   opacity: 1;
   right: 0;
   z-index: 11;
@@ -116,15 +141,15 @@ a {
 
 #mobile-hamburger-menu #mobile-header-menu nav .foodMenuNavIndented {
   font-size: 12px;
-  margin: 0px 0px 10px 50px;
+  margin: 10px 0px 0px 50px;
 }
 
 .headerLogo {
-  margin-top: 20px;
+  margin: 30px 0;
 }
 
 .headerLogo img {
-  width: 60vw;
+  width: 70vw;
 }
 
 .MobileContactPhone {
@@ -168,10 +193,11 @@ a {
   z-index: -5;
 }
 
-.banner p {
-  position: absolute;
-  right: 20px;
-  font-size: 8px;
+@media only screen and (min-width: 600px) {
+  .MobileContactPhone a {
+    pointer-events: none;
+    text-decoration: none;
+  }
 }
 
 .InnerMenuNavigation {
@@ -218,15 +244,15 @@ a {
 }
 
 .backArrow {
-  width: 40px;
-  height: 40px;
+  width: 25px;
+  height: 25px;
   border-radius: 50%;
   background-color: #fdf5ed;
   -webkit-box-shadow: 0 0 10px #cfc2b1;
           box-shadow: 0 0 10px #cfc2b1;
   position: absolute;
-  top: 380px;
-  left: 35px;
+  top: 385px;
+  left: 50px;
   display: -ms-grid;
   display: grid;
   justify-items: center;
@@ -236,12 +262,12 @@ a {
 }
 
 .backArrow a {
-  width: 40px;
-  height: 40px;
+  width: 25px;
+  height: 25px;
   position: absolute;
 }
 
 #menuBackArrow {
-  width: 30px;
+  width: 18px;
 }
 /*# sourceMappingURL=menu.css.map */
