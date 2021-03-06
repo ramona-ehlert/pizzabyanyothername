@@ -4,7 +4,9 @@
     @include centeredGrid;
     grid-template-columns: 1fr 1fr 1fr;
 }
-
+.desktopNav {
+    display: none;
+}
 #mobile-hamburger-menu {
     margin: -70px -40px 0px 0px;
     #mobile-menu-checkbox {
@@ -168,4 +170,68 @@
 }
 
 
+}
+
+@media only screen and (min-width: 1000px) {
+    .mobile-hamburger-line {
+        display: none;
+    }
+    #mobile-menu-checkbox {
+        display: none;
+    }
+    header {
+        height: 200px;
+    }
+    .headerLogo {
+        img {
+            width: 150px;
+            position: absolute;
+            left: 30px;
+            top: 20px;
+        }
+    }
+    .desktopNav {
+        
+            
+            display: inline-block;
+            position: absolute;
+            top: 0px;
+            right: 330px;
+            left: 200px;
+            top: 60px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+            padding: none;
+           
+            a {
+                font-size: 18px;
+            }
+            .foodMenuNavIndentedGrid {
+                
+                margin: 10px 0px 0px 60px;
+                display: none;
+                a {
+                    font-size: 14px;
+                }
+
+            }
+            #menuHoverDesktop:hover ~ .foodMenuNavIndentedGrid {
+                display: inline-block;
+                position: absolute;
+                top: 10px;
+                left: 20px;
+                display: grid;
+                
+            }
+            .foodMenuNavIndentedGrid:hover {
+                display: inline-block;
+                position: absolute;
+                top: 10px;
+                left: 20px;
+                display: grid;
+                
+            }
+        
+    }
+  
 }

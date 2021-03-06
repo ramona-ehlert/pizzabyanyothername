@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Belleza&family=Open+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Belleza&family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Belleza&family=Open+Sans&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -81,6 +82,10 @@ a {
           align-items: center;
   -ms-grid-columns: 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr;
+}
+
+.desktopNav {
+  display: none;
 }
 
 #mobile-hamburger-menu {
@@ -255,6 +260,117 @@ a {
   }
 }
 
+@media only screen and (min-width: 1000px) {
+  .mobile-hamburger-line {
+    display: none;
+  }
+  #mobile-menu-checkbox {
+    display: none;
+  }
+  header {
+    height: 200px;
+  }
+  .headerLogo img {
+    width: 150px;
+    position: absolute;
+    left: 30px;
+    top: 20px;
+  }
+  .desktopNav {
+    display: inline-block;
+    position: absolute;
+    top: 0px;
+    right: 330px;
+    left: 200px;
+    top: 60px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    padding: none;
+  }
+  .desktopNav a {
+    font-size: 18px;
+  }
+  .desktopNav .foodMenuNavIndentedGrid {
+    margin: 10px 0px 0px 60px;
+    display: none;
+  }
+  .desktopNav .foodMenuNavIndentedGrid a {
+    font-size: 14px;
+  }
+  .desktopNav #menuHoverDesktop:hover ~ .foodMenuNavIndentedGrid {
+    display: inline-block;
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    display: -ms-grid;
+    display: grid;
+  }
+  .desktopNav .foodMenuNavIndentedGrid:hover {
+    display: inline-block;
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    display: -ms-grid;
+    display: grid;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Belleza', sans-serif;
+  background-color: #ffede1;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Open Sans', 'sans-serif';
+}
+
+a {
+  color: #1e2744;
+}
+
+.citation {
+  position: absolute;
+  right: 20px;
+  font-size: 8px;
+  font-family: 'open-sans', 'sans-serif';
+}
+
+.citation a {
+  font-weight: bolder;
+  text-decoration: none;
+}
+
+@media only screen and (min-width: 600px) {
+  .citation {
+    font-size: 12px;
+  }
+}
+
+footer {
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #1e2744;
+  height: 40px;
+  width: 100%;
+  position: absolute;
+}
+
+footer p {
+  font-size: 12px;
+  color: #ffede1;
+}
+
 .InnerMenuNavigation {
   display: -ms-grid;
   display: grid;
@@ -371,6 +487,8 @@ a {
 .menuCard h4 {
   color: #a0b7a4;
   padding-top: 10px;
+  font-size: smaller;
+  font-family: 'open-sans', 'sans-serif';
 }
 
 .menuCard img {
@@ -393,48 +511,5 @@ a {
 .menuCard > p {
   color: #a0b7a4;
   padding-bottom: 20px;
-}
-
-@media only screen and (min-width: 600px) {
-  .menuCard {
-    width: 40vw;
-    background-color: #e2866d;
-    display: -ms-grid;
-    display: grid;
-    justify-items: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .menuCard img {
-    width: 30vw;
-    padding: 10px;
-    z-index: 3;
-  }
-  .menuCard .menuCardDescription {
-    position: relative;
-    top: -70px;
-    height: 0;
-    text-align: center;
-  }
-  .menuCard .menuCardDescription p {
-    opacity: 0;
-    -webkit-transition: all 1s ease-in-out;
-    transition: all 1s ease-in-out;
-    z-index: 2;
-    width: 29vw;
-  }
-  .menuCard:hover > .menuCardDescription {
-    height: 60px;
-    -webkit-transition: all 1s ease-in-out;
-    transition: all 1s ease-in-out;
-    top: 0;
-  }
-  .menuCard:hover > .menuCardDescription p {
-    opacity: 1;
-  }
-  .menuCard:hover > .menuCard {
-    position: absolute;
-  }
 }
 /*# sourceMappingURL=menu.css.map */

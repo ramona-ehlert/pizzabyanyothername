@@ -85,6 +85,10 @@ a {
       grid-template-columns: 1fr 1fr 1fr;
 }
 
+.desktopNav {
+  display: none;
+}
+
 #mobile-hamburger-menu {
   margin: -70px -40px 0px 0px;
 }
@@ -254,6 +258,63 @@ a {
   #mobile-hamburger-menu #mobile-header-menu nav .foodMenuNavIndented {
     font-size: 18px;
     margin: 10px 0px 0px 60px;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .mobile-hamburger-line {
+    display: none;
+  }
+  #mobile-menu-checkbox {
+    display: none;
+  }
+  header {
+    height: 200px;
+  }
+  .headerLogo img {
+    width: 150px;
+    position: absolute;
+    left: 30px;
+    top: 20px;
+  }
+  .desktopNav {
+    display: inline-block;
+    position: absolute;
+    top: 0px;
+    right: 330px;
+    left: 200px;
+    top: 60px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    padding: none;
+  }
+  .desktopNav a {
+    font-size: 18px;
+  }
+  .desktopNav .foodMenuNavIndentedGrid {
+    margin: 10px 0px 0px 60px;
+    display: none;
+  }
+  .desktopNav .foodMenuNavIndentedGrid a {
+    font-size: 14px;
+  }
+  .desktopNav #menuHoverDesktop:hover ~ .foodMenuNavIndentedGrid {
+    display: inline-block;
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    display: -ms-grid;
+    display: grid;
+  }
+  .desktopNav .foodMenuNavIndentedGrid:hover {
+    display: inline-block;
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    display: -ms-grid;
+    display: grid;
   }
 }
 
@@ -619,6 +680,58 @@ footer p {
     width: 80vw;
     position: absolute;
     margin: 250px 0 80px;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  #backgroundIndexPastaImage {
+    width: 20vw;
+    height: 30vw;
+    position: absolute;
+    right: 170px;
+    top: 200px;
+    border-radius: 100px;
+    z-index: 6;
+    border: #1e2744 5px solid;
+  }
+  .homePageImageMenu {
+    display: inline-block;
+  }
+  .homePageMargin {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 300px;
+  }
+  .homePageIntroGrid {
+    position: absolute;
+    width: 200px;
+    height: 500px;
+    top: 200px;
+    right: 70vw;
+    z-index: 100;
+  }
+  .homePageIntroGrid .introWords {
+    color: #1e2744;
+    text-shadow: none;
+    width: 180px;
+  }
+  .homePageIntroGrid .introWords .roundIntroButtons {
+    left: 280px;
+    width: 150px;
+    height: 150px;
+    margin-top: -40px;
+  }
+  .homePageIntroGrid #restaurantIntro .roundIntroButtons {
+    left: 50px;
+  }
+  .homePageIntroGrid img {
+    width: 150px;
+    height: 150px;
+    border: #e2866d 5px solid;
+  }
+  .freshIngredientsArticle {
+    margin-top: 1000px;
   }
 }
 /*# sourceMappingURL=style.css.map */

@@ -51,6 +51,7 @@
             width: 100px;
             height: 100px;
             margin-top: -15px;
+           
         }
     }
 
@@ -176,4 +177,68 @@
             }
         }
     }
+}
+
+@media only screen and (min-width: 1000px) {
+    #backgroundIndexPastaImage {
+        width: 20vw;
+        height: 30vw;
+        position: absolute;
+        right: 170px;
+        top: 200px;
+        border-radius: 100px;
+        z-index: 6;
+        border: $navy 5px solid;
+    }
+
+    .homePageImageMenu {
+        display: inline-block;
+    }
+    .homePageMargin {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 300px;
+    //     opacity: 0;
+    }
+    .homePageIntroGrid {
+        position: absolute;
+        // left: 250px;
+        width: 200px;
+        height: 500px;
+        top: 200px;
+        right: 70vw;
+        z-index: 100;
+        
+        .introWords {
+            color: $navy;
+            text-shadow: none;
+            width: 180px;
+            .roundIntroButtons {
+                
+                left: 280px;
+                width: 150px;
+                height: 150px;
+                margin-top: -40px;
+               
+            }}
+            #restaurantIntro {
+                
+                .roundIntroButtons {
+                    left: 50px;
+                }
+            }
+        
+        img {
+            width: 150px;
+            height: 150px;border: $red 5px solid;
+        }
+       
+    }
+  
+    .freshIngredientsArticle {
+        margin-top: 1000px;
+        
+    }
+   
 }
