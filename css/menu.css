@@ -200,6 +200,15 @@ a {
   }
 }
 
+.pageContainer {
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .InnerMenuNavigation {
   display: -ms-grid;
   display: grid;

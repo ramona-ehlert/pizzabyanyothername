@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Belleza&family=Open+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Belleza&family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Belleza&family=Open+Sans&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -200,6 +201,98 @@ a {
   }
 }
 
+.pageContainer {
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Belleza', sans-serif;
+  background-color: #ffede1;
+  color: #1e2744;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Open Sans', 'sans-serif';
+}
+
+a {
+  color: #1e2744;
+}
+
+.citation {
+  position: absolute;
+  right: 20px;
+  font-size: 8px;
+  font-family: 'open-sans', 'sans-serif';
+}
+
+.citation a {
+  font-weight: bolder;
+  text-decoration: none;
+}
+
+.hoursMenu {
+  width: 70%;
+  padding: 5%;
+  margin: 20px 0;
+  background-color: #1e2744;
+  color: #ffede1;
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hoursMenu h3 {
+  font-size: 24px;
+  margin-bottom: 0px;
+}
+
+.hoursMenu hr {
+  width: 70%;
+  color: #fdf5ed;
+  margin: 15px 0;
+}
+
+.hoursMenu .hoursTimesGrid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+}
+
+.hoursMenu .hoursTimesGrid .dayOfTheWeek {
+  -ms-grid-column-align: left;
+      justify-self: left;
+}
+
+.hoursMenu .hoursTimesGrid .dayOfTheWeek p {
+  margin: 10px 0;
+}
+
+.hoursMenu .hoursTimesGrid .timesOpen {
+  -ms-grid-column-align: right;
+      justify-self: right;
+}
+
+.hoursMenu .hoursTimesGrid .timesOpen p {
+  margin: 10px 0;
+}
+
 #backgroundIndexPastaImage {
   width: 100vw;
   height: 150vw;
@@ -207,7 +300,7 @@ a {
   z-index: -2;
 }
 
-section {
+.homePageImageMenu {
   display: -ms-grid;
   display: grid;
   justify-items: center;
@@ -301,6 +394,30 @@ section {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 20px;
+  margin: 30px 20px;
+}
+
+.freshIngredientsArticle {
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.freshIngredientsArticle hr {
+  width: 90%;
+  height: 1px;
+  background-color: #e2866d;
+}
+
+.freshIngredientsArticle img {
+  width: 100vw;
+}
+
+.freshIngredientsArticle p {
+  width: 65%;
+  margin: 35px 0px;
 }
 /*# sourceMappingURL=style.css.map */

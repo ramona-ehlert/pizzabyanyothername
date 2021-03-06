@@ -1,0 +1,39 @@
+@import "_globals.scss";
+
+.hoursMenu {
+    width: 70%;
+    padding: 5%;
+    margin: 20px 0;
+    background-color: $navy;
+    color: $cream;
+    @include centeredGrid;
+
+    h3 {
+        font-size: 24px;
+        margin-bottom: 0px;
+    }
+    hr {
+        width: 70%;
+        color: $white;
+        margin: 15px 0;
+    }
+    .hoursTimesGrid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        
+        .dayOfTheWeek {   
+            justify-self: left;
+            p {
+                margin: 10px 0;
+            }
+        }
+            .timesOpen {
+                justify-self: right;
+                p {
+                    margin: 10px 0;
+                }
+            }
+        
+    }
+}

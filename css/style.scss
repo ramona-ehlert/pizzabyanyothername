@@ -2,6 +2,8 @@
 
 @import '_header.scss';
 
+@import '_hours.scss';
+
 #backgroundIndexPastaImage {
     width: 100vw;
     height: 150vw;
@@ -10,7 +12,9 @@
 
 }
 
-section {
+
+
+.homePageImageMenu {
     @include centeredGrid;
 }
 .citation {
@@ -86,6 +90,23 @@ section {
 
 .introArticleTitle {
     @include centeredGrid;
-    margin: 20px;
+    margin: 30px 20px;
+
 }
 
+.freshIngredientsArticle {
+    @include centeredGrid;
+    hr {
+        width:90%;
+        height: 1px;
+        background-color: $red;
+        // margin-bottom: 10px;
+    }
+    img {
+        width: 100vw;
+    }
+    p {
+        width: 65%;
+        margin: 35px 0px;
+    }
+}
