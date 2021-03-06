@@ -1,0 +1,15 @@
+@import '_globals.scss';
+
+footer {
+    @include centeredGrid;
+    background-color: $navy;
+    height: 40px;
+    width: 100%;
+    position: absolute;
+   
+ 
+    p {
+        font-size: 12px;
+        color: $cream;
+    }
+}

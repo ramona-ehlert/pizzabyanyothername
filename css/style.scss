@@ -1,18 +1,17 @@
-@import '_globals.scss';
+@import "_globals.scss";
 
-@import '_header.scss';
+@import "_header.scss";
 
-@import '_hours.scss';
+@import "_hours.scss";
+
+@import "_footer.scss";
 
 #backgroundIndexPastaImage {
     width: 100vw;
     height: 150vw;
     position: absolute;
     z-index: -2;
-
 }
-
-
 
 .homePageImageMenu {
     @include centeredGrid;
@@ -21,7 +20,7 @@
     top: 260px;
     color: $navy;
     right: 20px;
-    
+
     text-shadow: none;
     a {
         color: $navy;
@@ -40,73 +39,141 @@
     grid-template-rows: 1fr 1fr 1fr;
     width: 80%;
     height: 120vw;
-    
+
     .introWords {
         width: 150px;
         color: $cream;
         font-size: 18px;
-        text-shadow: 1px 1px 0px $red;
+        text-shadow: 1px 1px 4px $red;
         .roundIntroButtons {
             position: absolute;
             right: 50px;
             width: 100px;
             height: 100px;
             margin-top: -15px;
-           
-            
         }
+    }
 
-        }
-    
     #restaurantIntro {
         text-align: right;
         .roundIntroButtons {
-           
             left: 50px;
-            
-            
         }
-
     }
     img {
         width: 100px;
         height: 100px;
         border-radius: 50%;
     }
-   
+
     .citation {
         top: 770px;
-        color: black;
         right: 50px;
-        font-family: 'open-sans', 'sans-serif';
+        font-family: "open-sans", "sans-serif";
         // width: 150px;
-
-        a {
-            color: black;
-        }
-
     }
 }
 
 .introArticleTitle {
     @include centeredGrid;
     margin: 30px 20px;
-
-}
-
-.freshIngredientsArticle {
-    @include centeredGrid;
     hr {
-        width:90%;
+        margin-top: 30px;
+        margin-bottom: -30px;
+        width: 70vw;
         height: 1px;
         background-color: $red;
         // margin-bottom: 10px;
     }
+}
+
+.freshIngredientsArticle {
+    @include centeredGrid;
+
     img {
         width: 100vw;
     }
     p {
         width: 65%;
         margin: 35px 0px;
+    }
+    .citation {
+        position: absolute;
+        top: 1400px;
+        color: $cream;
+        a {
+            color: $cream;
+        }
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .homePageImageMenu {
+        .citation {
+            top: 40vw;
+        }
+    }
+
+    .homePageIntroGrid {
+        width: 80%;
+        height: 130vw;
+
+        .introWords {
+            width: 240px;
+            font-size: 28px;
+
+            .roundIntroButtons {
+                position: absolute;
+                right: 120px;
+                width: 220px;
+                height: 220px;
+            }
+        }
+
+        #restaurantIntro {
+            .roundIntroButtons {
+                left: 160px;
+            }
+        }
+        img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+        }
+
+        .citation {
+            top: 180vw;
+            right: 40px;
+            font-family: "open-sans", "sans-serif";
+            // width: 150px;
+        }
+    }
+
+    .freshIngredientsArticle {
+        margin-top: 230px;
+        grid-template-columns: 1fr 1fr;
+        
+        p {
+            width: 200px;
+            font-size: 20px;
+        }
+        img {
+            width: 40vw;
+        }
+
+        .introArticleTitle {
+            font-size: 24px;
+            position: absolute;
+            top: 190vw;
+            right: 0;
+            margin: 0 23vw ;
+            width: 54vw;
+            hr {
+                
+                width: 80vw;
+                position: absolute;
+                margin: 250px 0 80px;
+            }
+        }
     }
 }

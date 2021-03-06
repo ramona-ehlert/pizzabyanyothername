@@ -8,7 +8,6 @@
 body {
   font-family: 'Belleza', sans-serif;
   background-color: #ffede1;
-  color: #1e2744;
 }
 
 h1, h2, h3, h4 {
@@ -29,6 +28,12 @@ a {
 .citation a {
   font-weight: bolder;
   text-decoration: none;
+}
+
+@media only screen and (min-width: 600px) {
+  .citation {
+    font-size: 12px;
+  }
 }
 
 * {
@@ -39,7 +44,6 @@ a {
 body {
   font-family: 'Belleza', sans-serif;
   background-color: #ffede1;
-  color: #1e2744;
 }
 
 h1, h2, h3, h4 {
@@ -60,6 +64,12 @@ a {
 .citation a {
   font-weight: bolder;
   text-decoration: none;
+}
+
+@media only screen and (min-width: 600px) {
+  .citation {
+    font-size: 12px;
+  }
 }
 
 .headerGrid {
@@ -109,7 +119,7 @@ a {
   width: 40px;
   height: 4px;
   background-color: #1e2744;
-  opacity: .8;
+  opacity: 0.8;
 }
 
 #mobile-hamburger-menu #mobile-header-menu {
@@ -193,13 +203,6 @@ a {
   z-index: -5;
 }
 
-@media only screen and (min-width: 600px) {
-  .MobileContactPhone a {
-    pointer-events: none;
-    text-decoration: none;
-  }
-}
-
 .pageContainer {
   display: -ms-grid;
   display: grid;
@@ -207,5 +210,48 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media only screen and (min-width: 600px) {
+  .MobileContactPhone {
+    width: 230px;
+    height: 50px;
+    top: 20px;
+  }
+  .MobileContactPhone img {
+    width: 40px;
+  }
+  .MobileContactPhone a {
+    font-size: 24px;
+    pointer-events: none;
+    text-decoration: none;
+  }
+  .headerLogo img {
+    width: 40vw;
+  }
+  #mobile-hamburger-menu #mobile-menu-checkbox {
+    width: 80px;
+    height: 80px;
+  }
+  #mobile-hamburger-menu #mobile-hamburger-container {
+    width: 80px;
+    height: 80px;
+  }
+  #mobile-hamburger-menu #mobile-hamburger-container .mobile-hamburger-line {
+    width: 60px;
+    height: 6px;
+  }
+  #mobile-hamburger-menu #mobile-header-menu nav {
+    display: -ms-grid;
+    display: grid;
+    padding-left: 40px;
+  }
+  #mobile-hamburger-menu #mobile-header-menu nav a {
+    font-size: 24px;
+  }
+  #mobile-hamburger-menu #mobile-header-menu nav .foodMenuNavIndented {
+    font-size: 18px;
+    margin: 10px 0px 0px 60px;
+  }
 }
 /*# sourceMappingURL=catering.css.map */

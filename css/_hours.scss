@@ -10,12 +10,24 @@
 
     h3 {
         font-size: 24px;
-        margin-bottom: 0px;
+        margin-bottom: 0px; 
     }
-    hr {
-        width: 70%;
+  
+   hr {      width: 70%;
         color: $white;
         margin: 15px 0;
+    }
+    a {
+        color: $cream;
+        font-size:20px;
+        text-decoration: none;
+        text-align: center;
+        &:hover {
+            color: $red;
+        }
+        &:active {
+            color: $red;
+        }
     }
     .hoursTimesGrid {
         display: grid;
@@ -32,8 +44,23 @@
                 justify-self: right;
                 p {
                     margin: 10px 0;
+                    // min-width: 150px;
                 }
             }
-        
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .hoursMenu {
+        margin: 40px 0;
+        h3 {
+            font-size: 36px;
+        }
+        a {
+            font-size: 24px;
+        }
+    }
+    .hoursTimesGrid {
+        font-size: 20px;
     }
 }

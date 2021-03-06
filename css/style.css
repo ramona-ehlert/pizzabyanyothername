@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Belleza&family=Open+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Belleza&family=Open+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Belleza&family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Belleza&family=Open+Sans&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -9,7 +10,6 @@
 body {
   font-family: 'Belleza', sans-serif;
   background-color: #ffede1;
-  color: #1e2744;
 }
 
 h1, h2, h3, h4 {
@@ -32,6 +32,12 @@ a {
   text-decoration: none;
 }
 
+@media only screen and (min-width: 600px) {
+  .citation {
+    font-size: 12px;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -40,7 +46,6 @@ a {
 body {
   font-family: 'Belleza', sans-serif;
   background-color: #ffede1;
-  color: #1e2744;
 }
 
 h1, h2, h3, h4 {
@@ -61,6 +66,12 @@ a {
 .citation a {
   font-weight: bolder;
   text-decoration: none;
+}
+
+@media only screen and (min-width: 600px) {
+  .citation {
+    font-size: 12px;
+  }
 }
 
 .headerGrid {
@@ -110,7 +121,7 @@ a {
   width: 40px;
   height: 4px;
   background-color: #1e2744;
-  opacity: .8;
+  opacity: 0.8;
 }
 
 #mobile-hamburger-menu #mobile-header-menu {
@@ -194,13 +205,6 @@ a {
   z-index: -5;
 }
 
-@media only screen and (min-width: 600px) {
-  .MobileContactPhone a {
-    pointer-events: none;
-    text-decoration: none;
-  }
-}
-
 .pageContainer {
   display: -ms-grid;
   display: grid;
@@ -208,6 +212,49 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media only screen and (min-width: 600px) {
+  .MobileContactPhone {
+    width: 230px;
+    height: 50px;
+    top: 20px;
+  }
+  .MobileContactPhone img {
+    width: 40px;
+  }
+  .MobileContactPhone a {
+    font-size: 24px;
+    pointer-events: none;
+    text-decoration: none;
+  }
+  .headerLogo img {
+    width: 40vw;
+  }
+  #mobile-hamburger-menu #mobile-menu-checkbox {
+    width: 80px;
+    height: 80px;
+  }
+  #mobile-hamburger-menu #mobile-hamburger-container {
+    width: 80px;
+    height: 80px;
+  }
+  #mobile-hamburger-menu #mobile-hamburger-container .mobile-hamburger-line {
+    width: 60px;
+    height: 6px;
+  }
+  #mobile-hamburger-menu #mobile-header-menu nav {
+    display: -ms-grid;
+    display: grid;
+    padding-left: 40px;
+  }
+  #mobile-hamburger-menu #mobile-header-menu nav a {
+    font-size: 24px;
+  }
+  #mobile-hamburger-menu #mobile-header-menu nav .foodMenuNavIndented {
+    font-size: 18px;
+    margin: 10px 0px 0px 60px;
+  }
 }
 
 * {
@@ -218,7 +265,6 @@ a {
 body {
   font-family: 'Belleza', sans-serif;
   background-color: #ffede1;
-  color: #1e2744;
 }
 
 h1, h2, h3, h4 {
@@ -239,6 +285,12 @@ a {
 .citation a {
   font-weight: bolder;
   text-decoration: none;
+}
+
+@media only screen and (min-width: 600px) {
+  .citation {
+    font-size: 12px;
+  }
 }
 
 .hoursMenu {
@@ -266,6 +318,21 @@ a {
   margin: 15px 0;
 }
 
+.hoursMenu a {
+  color: #ffede1;
+  font-size: 20px;
+  text-decoration: none;
+  text-align: center;
+}
+
+.hoursMenu a:hover {
+  color: #e2866d;
+}
+
+.hoursMenu a:active {
+  color: #e2866d;
+}
+
 .hoursMenu .hoursTimesGrid {
   display: -ms-grid;
   display: grid;
@@ -291,6 +358,75 @@ a {
 
 .hoursMenu .hoursTimesGrid .timesOpen p {
   margin: 10px 0;
+}
+
+@media only screen and (min-width: 600px) {
+  .hoursMenu {
+    margin: 40px 0;
+  }
+  .hoursMenu h3 {
+    font-size: 36px;
+  }
+  .hoursMenu a {
+    font-size: 24px;
+  }
+  .hoursTimesGrid {
+    font-size: 20px;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Belleza', sans-serif;
+  background-color: #ffede1;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Open Sans', 'sans-serif';
+}
+
+a {
+  color: #1e2744;
+}
+
+.citation {
+  position: absolute;
+  right: 20px;
+  font-size: 8px;
+  font-family: 'open-sans', 'sans-serif';
+}
+
+.citation a {
+  font-weight: bolder;
+  text-decoration: none;
+}
+
+@media only screen and (min-width: 600px) {
+  .citation {
+    font-size: 12px;
+  }
+}
+
+footer {
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #1e2744;
+  height: 40px;
+  width: 100%;
+  position: absolute;
+}
+
+footer p {
+  font-size: 12px;
+  color: #ffede1;
 }
 
 #backgroundIndexPastaImage {
@@ -351,7 +487,7 @@ a {
   width: 150px;
   color: #ffede1;
   font-size: 18px;
-  text-shadow: 1px 1px 0px #e2866d;
+  text-shadow: 1px 1px 4px #e2866d;
 }
 
 .homePageIntroGrid .introWords .roundIntroButtons {
@@ -378,13 +514,8 @@ a {
 
 .homePageIntroGrid .citation {
   top: 770px;
-  color: black;
   right: 50px;
-  font-family: 'open-sans', 'sans-serif';
-}
-
-.homePageIntroGrid .citation a {
-  color: black;
+  font-family: "open-sans", "sans-serif";
 }
 
 .introArticleTitle {
@@ -397,6 +528,14 @@ a {
   margin: 30px 20px;
 }
 
+.introArticleTitle hr {
+  margin-top: 30px;
+  margin-bottom: -30px;
+  width: 70vw;
+  height: 1px;
+  background-color: #e2866d;
+}
+
 .freshIngredientsArticle {
   display: -ms-grid;
   display: grid;
@@ -406,12 +545,6 @@ a {
           align-items: center;
 }
 
-.freshIngredientsArticle hr {
-  width: 90%;
-  height: 1px;
-  background-color: #e2866d;
-}
-
 .freshIngredientsArticle img {
   width: 100vw;
 }
@@ -419,5 +552,73 @@ a {
 .freshIngredientsArticle p {
   width: 65%;
   margin: 35px 0px;
+}
+
+.freshIngredientsArticle .citation {
+  position: absolute;
+  top: 1400px;
+  color: #ffede1;
+}
+
+.freshIngredientsArticle .citation a {
+  color: #ffede1;
+}
+
+@media only screen and (min-width: 600px) {
+  .homePageImageMenu .citation {
+    top: 40vw;
+  }
+  .homePageIntroGrid {
+    width: 80%;
+    height: 130vw;
+  }
+  .homePageIntroGrid .introWords {
+    width: 240px;
+    font-size: 28px;
+  }
+  .homePageIntroGrid .introWords .roundIntroButtons {
+    position: absolute;
+    right: 120px;
+    width: 220px;
+    height: 220px;
+  }
+  .homePageIntroGrid #restaurantIntro .roundIntroButtons {
+    left: 160px;
+  }
+  .homePageIntroGrid img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+  }
+  .homePageIntroGrid .citation {
+    top: 180vw;
+    right: 40px;
+    font-family: "open-sans", "sans-serif";
+  }
+  .freshIngredientsArticle {
+    margin-top: 230px;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+  .freshIngredientsArticle p {
+    width: 200px;
+    font-size: 20px;
+  }
+  .freshIngredientsArticle img {
+    width: 40vw;
+  }
+  .freshIngredientsArticle .introArticleTitle {
+    font-size: 24px;
+    position: absolute;
+    top: 190vw;
+    right: 0;
+    margin: 0 23vw;
+    width: 54vw;
+  }
+  .freshIngredientsArticle .introArticleTitle hr {
+    width: 80vw;
+    position: absolute;
+    margin: 250px 0 80px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

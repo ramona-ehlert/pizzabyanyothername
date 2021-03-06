@@ -1,12 +1,9 @@
-@import '_globals.scss';
-
-
+@import "_globals.scss";
 
 .headerGrid {
     @include centeredGrid;
     grid-template-columns: 1fr 1fr 1fr;
 }
-
 
 #mobile-hamburger-menu {
     margin: -70px -40px 0px 0px;
@@ -24,6 +21,8 @@
         transition: all 0.5s ease-in-out;
     }
 
+    
+
     #mobile-hamburger-container {
         @include centeredGrid;
         width: 50px;
@@ -35,7 +34,7 @@
             width: 40px;
             height: 4px;
             background-color: $navy;
-            opacity: .8;
+            opacity: 0.8;
         }
     }
 
@@ -54,7 +53,7 @@
         // padding: 20px;
         nav {
             display: grid;
-            
+
             a {
                 margin: 2vh 20px;
                 color: $cream;
@@ -96,11 +95,9 @@
         color: $red;
     }
     img {
-            width: 20px;
-        }
+        width: 20px;
     }
-
-
+}
 
 .banner {
     img {
@@ -109,14 +106,66 @@
         z-index: -5;
     }
 }
+.pageContainer {
+    @include centeredGrid;
+}
 
 @media only screen and (min-width: 600px) {
     .MobileContactPhone {
-        a {pointer-events: none;
-        text-decoration: none;}
+        width: 230px;
+        height: 50px;
+        top: 20px;
+        img {
+            width: 40px;
+        }
+        a {
+            font-size: 24px;
+            pointer-events: none;
+            text-decoration: none;
+        }
+    }
+
+.headerLogo {
+    // margin-right: -300px;
+    img {
+        width: 40vw;
+    }
+}
+#mobile-hamburger-menu {
+  
+    #mobile-menu-checkbox {
+        width: 80px;
+        height: 80px;
+      
+    }
+    #mobile-hamburger-container {
+       
+        width: 80px;
+        height: 80px;
+    
+
+        .mobile-hamburger-line {
+            width: 60px;
+            height: 6px;
+        
+        }
+    }
+    #mobile-header-menu {
+        
+        nav {
+            display: grid;
+            padding-left: 40px;
+
+            a {
+                font-size: 24px;
+            }
+            .foodMenuNavIndented {
+                font-size: 18px;
+                margin: 10px 0px 0px 60px;
+            }
+        }
     }
 }
 
-.pageContainer {
-    @include centeredGrid;
+
 }
