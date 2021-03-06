@@ -1,38 +1,35 @@
-@import '_globals.scss';
-@import '_header.scss';
-
-
+@import "_globals.scss";
+@import "_header.scss";
 
 .InnerMenuNavigation {
     @include centeredGrid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;  
-    margin: 60px 10px 0px; 
-    
-.InnerMenuNavigationButton {
-    @include centeredGrid;
-    background-color: $white;
-    height: 90px;
-    width: 50px;
-    border-radius: 30px;
-    // margin: 30px 10px 20px;
-    box-shadow: 0px 0px 20px $boxShadow;
-    padding: 5px;
-    
-    a {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 60px 10px 0px;
+
+    .InnerMenuNavigationButton {
+        @include centeredGrid;
+        background-color: $white;
         height: 90px;
         width: 50px;
-        position: absolute;
+        border-radius: 30px;
+        // margin: 30px 10px 20px;
+        box-shadow: 0px 0px 20px $boxShadow;
+        padding: 5px;
 
+        a {
+            height: 90px;
+            width: 50px;
+            position: absolute;
+        }
+
+        img {
+            width: 40px;
+        }
+        p {
+            font-size: 12px;
+            margin-top: -20px;
+        }
     }
-    
-    img {
-        width: 40px;
-    }
-    p {
-        font-size: 12px;
-        margin-top: -20px;
-    }
-}
 }
 .backArrow {
     width: 25px;
@@ -44,15 +41,12 @@
     top: 385px;
     left: 50px;
     @include centeredGrid;
-    
+
     a {
         width: 25px;
         height: 25px;
         position: absolute;
-        
     }
-   
-  
 }
 #menuBackArrow {
     width: 18px;
@@ -65,3 +59,89 @@
 //      position: absolute;
 //      z-index: -50;
 //  }
+.menuDisplay {
+    margin: 20px;
+
+    h2 {
+        text-decoration: none;
+        margin: 20px 0;
+    }
+    hr {
+        height: 2px;
+        background-color: $red;
+        margin: 20px 0;
+        width: 90%;
+    }
+}
+.menuItemGrid {
+    @include centeredGrid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 30px;
+    column-gap: 20px;
+}
+.menuCard {
+    width: 40vw;
+    background-color: $navy;
+    @include centeredGrid;
+    border-radius: 15px;
+    h4 {
+        color: $green;
+        padding-top: 10px;
+    }
+    img {
+        width: 30vw;
+        padding: 10px;
+        z-index: 3;
+    }
+    .menuCardDescription {
+       
+        text-align: center;
+        padding: 10px;
+        p {
+           font-size: 12px;
+            width: 29vw;
+            color: $cream;
+        }
+    }
+    >p {
+        color: $green;
+        padding-bottom: 20px;
+    }
+    
+}
+
+@media only screen and (min-width: 600px) {.menuCard {
+    width: 40vw;
+    background-color: $red;
+    @include centeredGrid;
+
+    img {
+        width: 30vw;
+        padding: 10px;
+        z-index: 3;
+    }
+    .menuCardDescription {
+        position: relative;
+        top: -70px;
+        height: 0;
+        text-align: center;
+        p {
+            opacity: 0;
+            transition: all 1s ease-in-out;
+            z-index: 2;
+            width: 29vw;
+        }
+    }
+    &:hover > .menuCardDescription {
+        height: 60px;
+        transition: all 1s ease-in-out;
+        top: 0;
+        p {
+            opacity: 1;
+        }
+    }
+    &:hover > .menuCard {
+        position: absolute;
+    }
+}
+}

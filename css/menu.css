@@ -325,4 +325,116 @@ a {
 #menuBackArrow {
   width: 18px;
 }
+
+.menuDisplay {
+  margin: 20px;
+}
+
+.menuDisplay h2 {
+  text-decoration: none;
+  margin: 20px 0;
+}
+
+.menuDisplay hr {
+  height: 2px;
+  background-color: #e2866d;
+  margin: 20px 0;
+  width: 90%;
+}
+
+.menuItemGrid {
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  row-gap: 30px;
+  -webkit-column-gap: 20px;
+          column-gap: 20px;
+}
+
+.menuCard {
+  width: 40vw;
+  background-color: #1e2744;
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 15px;
+}
+
+.menuCard h4 {
+  color: #a0b7a4;
+  padding-top: 10px;
+}
+
+.menuCard img {
+  width: 30vw;
+  padding: 10px;
+  z-index: 3;
+}
+
+.menuCard .menuCardDescription {
+  text-align: center;
+  padding: 10px;
+}
+
+.menuCard .menuCardDescription p {
+  font-size: 12px;
+  width: 29vw;
+  color: #ffede1;
+}
+
+.menuCard > p {
+  color: #a0b7a4;
+  padding-bottom: 20px;
+}
+
+@media only screen and (min-width: 600px) {
+  .menuCard {
+    width: 40vw;
+    background-color: #e2866d;
+    display: -ms-grid;
+    display: grid;
+    justify-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .menuCard img {
+    width: 30vw;
+    padding: 10px;
+    z-index: 3;
+  }
+  .menuCard .menuCardDescription {
+    position: relative;
+    top: -70px;
+    height: 0;
+    text-align: center;
+  }
+  .menuCard .menuCardDescription p {
+    opacity: 0;
+    -webkit-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+    z-index: 2;
+    width: 29vw;
+  }
+  .menuCard:hover > .menuCardDescription {
+    height: 60px;
+    -webkit-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+    top: 0;
+  }
+  .menuCard:hover > .menuCardDescription p {
+    opacity: 1;
+  }
+  .menuCard:hover > .menuCard {
+    position: absolute;
+  }
+}
 /*# sourceMappingURL=menu.css.map */
