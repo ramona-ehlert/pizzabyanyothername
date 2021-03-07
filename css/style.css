@@ -281,8 +281,8 @@ a {
     display: inline-block;
     position: absolute;
     top: 0px;
-    right: 330px;
-    left: 200px;
+    right: 360px;
+    left: 170px;
     top: 60px;
     display: -ms-grid;
     display: grid;
@@ -587,6 +587,7 @@ footer p {
       -ms-flex-align: center;
           align-items: center;
   margin: 30px 20px;
+  color: #1e2744;
 }
 
 .introArticleTitle hr {
@@ -611,6 +612,7 @@ footer p {
 }
 
 .freshIngredientsArticle p {
+  color: #1e2744;
   width: 65%;
   margin: 35px 0px;
 }
@@ -688,7 +690,7 @@ footer p {
     width: 20vw;
     height: 30vw;
     position: absolute;
-    right: 170px;
+    right: 230px;
     top: 200px;
     border-radius: 100px;
     z-index: 6;
@@ -697,11 +699,24 @@ footer p {
   .homePageImageMenu {
     display: inline-block;
   }
+  .homePageImageMenu .citation {
+    top: 230px;
+    right: 270px;
+    color: #ffede1;
+    z-index: 7;
+    width: 80px;
+    font-size: 10px;
+  }
+  .homePageImageMenu .citation a {
+    color: #ffede1;
+  }
   .homePageMargin {
     position: absolute;
     top: 0;
     right: 0;
-    width: 300px;
+    bottom: 0;
+    width: 350px;
+    height: 1415px;
   }
   .homePageIntroGrid {
     position: absolute;
@@ -730,8 +745,69 @@ footer p {
     height: 150px;
     border: #e2866d 5px solid;
   }
+  .homePageIntroGrid .citation {
+    top: 500px;
+    right: 0px;
+    font-family: "open-sans", "sans-serif";
+    color: #1e2744;
+    width: 200px;
+  }
+  .homePageIntroGrid .citation a {
+    color: #1e2744;
+  }
   .freshIngredientsArticle {
-    margin-top: 1000px;
+    margin: 800px 0 100px -470px;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    width: 40vw;
+  }
+  .freshIngredientsArticle p {
+    width: 200px;
+    font-size: 20px;
+  }
+  .freshIngredientsArticle img {
+    width: 300px;
+    margin-left: 40px;
+  }
+  .freshIngredientsArticle .introArticleTitle {
+    font-size: 24px;
+    position: absolute;
+    top: 800px;
+    right: 0;
+    margin: 0 40vw 0 10vw;
+    width: 50vw;
+  }
+  .freshIngredientsArticle .introArticleTitle hr {
+    width: 60vw;
+    position: absolute;
+    margin: 250px 0 80px;
+  }
+  .freshIngredientsArticle .citation {
+    position: absolute;
+    top: 980px;
+    left: 330px;
+    color: #ffede1;
+    font-size: 8px;
+    width: 100px;
+  }
+  .freshIngredientsArticle .citation a {
+    color: #ffede1;
+  }
+  .hoursMenu {
+    background-color: #1e2744;
+    width: 324px;
+    height: 600px;
+    z-index: 5;
+    position: absolute;
+    right: 0px;
+    top: 720px;
+    padding: 25px 13px;
+  }
+  .hoursMenu a {
+    margin: 40px 0;
+  }
+  .hoursMenu h3 {
+    margin: 30px 0;
   }
 }
 /*# sourceMappingURL=style.css.map */
