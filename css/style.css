@@ -268,8 +268,8 @@ a {
   #mobile-menu-checkbox {
     display: none;
   }
-  header {
-    height: 200px;
+  .headerGrid {
+    min-height: 170px;
   }
   .headerLogo img {
     width: 150px;
@@ -692,7 +692,7 @@ footer p {
     position: absolute;
     right: 230px;
     top: 200px;
-    border-radius: 100px;
+    border-radius: 200px;
     z-index: 6;
     border: #1e2744 5px solid;
   }

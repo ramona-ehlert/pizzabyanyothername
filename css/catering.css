@@ -266,8 +266,8 @@ a {
   #mobile-menu-checkbox {
     display: none;
   }
-  header {
-    height: 200px;
+  .headerGrid {
+    min-height: 170px;
   }
   .headerLogo img {
     width: 150px;
