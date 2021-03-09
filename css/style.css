@@ -14,9 +14,10 @@ body {
 
 h1, h2, h3, h4 {
   font-family: 'Open Sans', 'sans-serif';
+  color: #1e2744;
 }
 
-a {
+a, p {
   color: #1e2744;
 }
 
@@ -50,9 +51,10 @@ body {
 
 h1, h2, h3, h4 {
   font-family: 'Open Sans', 'sans-serif';
+  color: #1e2744;
 }
 
-a {
+a, p {
   color: #1e2744;
 }
 
@@ -86,6 +88,10 @@ a {
 }
 
 .desktopNav {
+  display: none;
+}
+
+.colourfulMargin {
   display: none;
 }
 
@@ -316,6 +322,16 @@ a {
     display: -ms-grid;
     display: grid;
   }
+  .colourfulMargin {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 350px;
+    height: 1300px;
+    background-color: #e2866d99;
+    display: block;
+  }
 }
 
 * {
@@ -330,9 +346,10 @@ body {
 
 h1, h2, h3, h4 {
   font-family: 'Open Sans', 'sans-serif';
+  color: #1e2744;
 }
 
-a {
+a, p {
   color: #1e2744;
 }
 
@@ -371,6 +388,7 @@ a {
 .hoursMenu h3 {
   font-size: 24px;
   margin-bottom: 0px;
+  color: #ffede1;
 }
 
 .hoursMenu hr {
@@ -410,6 +428,8 @@ a {
 
 .hoursMenu .hoursTimesGrid .dayOfTheWeek p {
   margin: 10px 0;
+  font-size: 12px;
+  color: #ffede1;
 }
 
 .hoursMenu .hoursTimesGrid .timesOpen {
@@ -419,6 +439,8 @@ a {
 
 .hoursMenu .hoursTimesGrid .timesOpen p {
   margin: 10px 0;
+  font-size: 12px;
+  color: #ffede1;
 }
 
 @media only screen and (min-width: 600px) {
@@ -448,9 +470,10 @@ body {
 
 h1, h2, h3, h4 {
   font-family: 'Open Sans', 'sans-serif';
+  color: #1e2744;
 }
 
-a {
+a, p {
   color: #1e2744;
 }
 
@@ -482,7 +505,9 @@ footer {
   background-color: #1e2744;
   height: 40px;
   width: 100%;
-  position: absolute;
+  margin-top: 20px;
+  -webkit-box-shadow: 0px -2px 5px #a0b7a4;
+          box-shadow: 0px -2px 5px #a0b7a4;
 }
 
 footer p {
@@ -716,7 +741,7 @@ footer p {
     right: 0;
     bottom: 0;
     width: 350px;
-    height: 1415px;
+    height: 1300px;
   }
   .homePageIntroGrid {
     position: absolute;

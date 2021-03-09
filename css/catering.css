@@ -12,9 +12,10 @@ body {
 
 h1, h2, h3, h4 {
   font-family: 'Open Sans', 'sans-serif';
+  color: #1e2744;
 }
 
-a {
+a, p {
   color: #1e2744;
 }
 
@@ -48,9 +49,10 @@ body {
 
 h1, h2, h3, h4 {
   font-family: 'Open Sans', 'sans-serif';
+  color: #1e2744;
 }
 
-a {
+a, p {
   color: #1e2744;
 }
 
@@ -84,6 +86,10 @@ a {
 }
 
 .desktopNav {
+  display: none;
+}
+
+.colourfulMargin {
   display: none;
 }
 
@@ -313,6 +319,16 @@ a {
     left: 20px;
     display: -ms-grid;
     display: grid;
+  }
+  .colourfulMargin {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 350px;
+    height: 1300px;
+    background-color: #e2866d99;
+    display: block;
   }
 }
 /*# sourceMappingURL=catering.css.map */

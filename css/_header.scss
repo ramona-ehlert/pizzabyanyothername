@@ -7,6 +7,9 @@
 .desktopNav {
     display: none;
 }
+.colourfulMargin {
+    display: none;
+}
 #mobile-hamburger-menu {
     margin: -70px -40px 0px 0px;
     #mobile-menu-checkbox {
@@ -233,5 +236,15 @@
             }
         
     }
-  
+    .colourfulMargin {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        width: 350px;
+        height: 1300px;
+        background-color: #e2866d99;
+        display: block;
+    //     opacity: 0;
+    }
 }

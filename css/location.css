@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Belleza&family=Open+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Belleza&family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Belleza&family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Belleza&family=Open+Sans&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -12,9 +14,10 @@ body {
 
 h1, h2, h3, h4 {
   font-family: 'Open Sans', 'sans-serif';
+  color: #1e2744;
 }
 
-a {
+a, p {
   color: #1e2744;
 }
 
@@ -48,9 +51,10 @@ body {
 
 h1, h2, h3, h4 {
   font-family: 'Open Sans', 'sans-serif';
+  color: #1e2744;
 }
 
-a {
+a, p {
   color: #1e2744;
 }
 
@@ -84,6 +88,10 @@ a {
 }
 
 .desktopNav {
+  display: none;
+}
+
+.colourfulMargin {
   display: none;
 }
 
@@ -314,5 +322,259 @@ a {
     display: -ms-grid;
     display: grid;
   }
+  .colourfulMargin {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 350px;
+    height: 1300px;
+    background-color: #e2866d99;
+    display: block;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Belleza', sans-serif;
+  background-color: #ffede1;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Open Sans', 'sans-serif';
+  color: #1e2744;
+}
+
+a, p {
+  color: #1e2744;
+}
+
+.citation {
+  position: absolute;
+  right: 20px;
+  font-size: 8px;
+  font-family: 'open-sans', 'sans-serif';
+}
+
+.citation a {
+  font-weight: bolder;
+  text-decoration: none;
+}
+
+@media only screen and (min-width: 600px) {
+  .citation {
+    font-size: 12px;
+  }
+}
+
+footer {
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #1e2744;
+  height: 40px;
+  width: 100%;
+  margin-top: 20px;
+  -webkit-box-shadow: 0px -2px 5px #a0b7a4;
+          box-shadow: 0px -2px 5px #a0b7a4;
+}
+
+footer p {
+  font-size: 12px;
+  color: #ffede1;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Belleza', sans-serif;
+  background-color: #ffede1;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Open Sans', 'sans-serif';
+  color: #1e2744;
+}
+
+a, p {
+  color: #1e2744;
+}
+
+.citation {
+  position: absolute;
+  right: 20px;
+  font-size: 8px;
+  font-family: 'open-sans', 'sans-serif';
+}
+
+.citation a {
+  font-weight: bolder;
+  text-decoration: none;
+}
+
+@media only screen and (min-width: 600px) {
+  .citation {
+    font-size: 12px;
+  }
+}
+
+.hoursMenu {
+  width: 70%;
+  padding: 5%;
+  margin: 20px 0;
+  background-color: #1e2744;
+  color: #ffede1;
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hoursMenu h3 {
+  font-size: 24px;
+  margin-bottom: 0px;
+  color: #ffede1;
+}
+
+.hoursMenu hr {
+  width: 70%;
+  color: #fdf5ed;
+  margin: 15px 0;
+}
+
+.hoursMenu a {
+  color: #ffede1;
+  font-size: 20px;
+  text-decoration: none;
+  text-align: center;
+}
+
+.hoursMenu a:hover {
+  color: #e2866d;
+}
+
+.hoursMenu a:active {
+  color: #e2866d;
+}
+
+.hoursMenu .hoursTimesGrid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+}
+
+.hoursMenu .hoursTimesGrid .dayOfTheWeek {
+  -ms-grid-column-align: left;
+      justify-self: left;
+}
+
+.hoursMenu .hoursTimesGrid .dayOfTheWeek p {
+  margin: 10px 0;
+  font-size: 12px;
+  color: #ffede1;
+}
+
+.hoursMenu .hoursTimesGrid .timesOpen {
+  -ms-grid-column-align: right;
+      justify-self: right;
+}
+
+.hoursMenu .hoursTimesGrid .timesOpen p {
+  margin: 10px 0;
+  font-size: 12px;
+  color: #ffede1;
+}
+
+@media only screen and (min-width: 600px) {
+  .hoursMenu {
+    margin: 40px 0;
+  }
+  .hoursMenu h3 {
+    font-size: 36px;
+  }
+  .hoursMenu a {
+    font-size: 24px;
+  }
+  .hoursTimesGrid {
+    font-size: 20px;
+  }
+}
+
+.colourfulMargin {
+  display: none;
+}
+
+.hr {
+  width: 70%;
+  height: 1px;
+  background-color: #1e2744;
+  margin: 10px 15% 20px;
+}
+
+.locationGrid {
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 70vw;
+}
+
+.locationGrid iframe {
+  width: 80vw;
+  height: 300px;
+  margin: 30px 0;
+  border: #a0b7a4 5px inset;
+}
+
+.locationGrid img {
+  width: 80%;
+  margin: 30px 0;
+  border: #1e2744 2px solid;
+}
+
+.address {
+  text-align: center;
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #a0b7a4cc;
+  width: 100vw;
+  padding-top: 20px;
+}
+
+.hoursMenu {
+  padding: 6%;
+  margin: 0 9%;
+}
+
+.citation {
+  color: #ffede1;
+  top: 370px;
+  right: 35px;
+  width: 100px;
+}
+
+.citation a {
+  color: #ffede1;
 }
 /*# sourceMappingURL=location.css.map */

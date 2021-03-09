@@ -18,13 +18,15 @@ $boxShadow: rgb(207, 194, 177);
 body {
     font-family: 'Belleza', sans-serif;
     background-color: $cream;
+    
 }
 
 h1,h2,h3,h4 {
     font-family: 'Open Sans', 'sans-serif' ;
+    color: $navy;
 }
 
-a {
+a,p {
     color: $navy;
     
 }

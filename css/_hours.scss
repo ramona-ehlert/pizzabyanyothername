@@ -11,6 +11,7 @@
     h3 {
         font-size: 24px;
         margin-bottom: 0px; 
+        color: $cream;
     }
   
    hr {      width: 70%;
@@ -33,17 +34,21 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr;
-        
+    
         .dayOfTheWeek {   
             justify-self: left;
             p {
                 margin: 10px 0;
+                font-size: 12px;
+                color: $cream;
             }
         }
             .timesOpen {
                 justify-self: right;
                 p {
                     margin: 10px 0;
+                    font-size: 12px;
+                    color: $cream;
                     // min-width: 150px;
                 }
             }
