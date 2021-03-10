@@ -1,3 +1,77 @@
 @import '_globals.scss';
 
 @import '_header.scss';
+@import '_footer.scss';
+
+.banner {
+    width: 100vw;
+    @include centeredGrid;
+    h2 {
+        margin: 20px 0 20px;
+    }
+    img {
+        width: 100%;
+    }
+}
+
+article {
+    @include centeredGrid;
+    img {
+        width: 80%;
+        border-radius: 10%;
+        border: 4px solid $green;
+        margin: 10px;
+    }
+    p {
+        margin: 5px 20px;
+    }
+}
+
+.video {
+    background-color: $green;
+    @include centeredGrid;
+    padding: 30px 0;
+    margin-top: 20px;
+    iframe {
+        width: 300px;
+        height: 168.75px;
+        padding: 10px;
+    }
+   
+} 
+.citation {
+    position: relative;
+}
+footer {
+    margin-top: 0;
+    }
+
+    @media only screen and (min-width: 600px) {
+        .banner {
+            
+          h2 {
+              font-size: 2em;
+          }
+        }
+        
+        article {
+            display: inline-block;
+            margin: 20px;
+            p {
+                font-size: 1em;
+            }
+            img {
+                width: 45%;
+                float: right;
+               
+                
+            }
+        }
+     .video {
+         iframe {
+             margin: 40px 0;
+             width: 600px;
+             height: 337.5px;
+         }
+     }
+    }

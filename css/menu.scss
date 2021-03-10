@@ -1,11 +1,30 @@
 @import "_globals.scss";
 @import "_header.scss";
 @import "_footer.scss";
+.banner {
+    @include centeredGrid;
+    img {
+        width: 100vw;
+    }
+    h2 {
+        font-size: 3em;
+        font-family: 'Belleza', 'sans-serif';
+        color: $navy;
+        margin-top: 20px
+        
+    }
+    .citation {
+        color: $green;
+        a {
+            color: $green;
+        }
+    }
+}
 
 .InnerMenuNavigation {
     @include centeredGrid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    margin: 60px 10px 0px;
+    margin: 30px 10px 0px;
 
     .InnerMenuNavigationButton {
         @include centeredGrid;
@@ -110,7 +129,42 @@
         color: $green;
         padding-bottom: 20px;
     }
+
     
+}
+
+
+@media only screen and (min-width: 600px) {
+    .InnerMenuNavigation {
+        .InnerMenuNavigationButton {
+            border-radius: 100px;
+            height: 180px;
+            width: 100px;
+            img {
+                width: 80px;
+            }
+            p {
+                font-size: 1.7em;
+            }
+        }
+    }
+    .menuDisplay {
+        h2 {
+            font-size: 2.5em;
+            margin: 20px 0px 40px 30px;
+        }
+    }
+    .menuCard {
+        h4 {
+            font-size: 1.5em;
+        }
+        .menuCardDescription {
+            p {font-size: 16px;}
+        }
+        >p {
+            font-size: 22px;
+        }
+    }
 }
 
 // @media only screen and (min-width: 600px) {

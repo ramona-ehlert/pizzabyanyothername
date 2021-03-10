@@ -104,17 +104,49 @@
     }
 }
 
-.banner {
-    img {
-        width: 100vw;
-        opacity: 70%;
-        z-index: -5;
-    }
-}
+// .banner {
+//     img {
+//         width: 100vw;
+//         // opacity: 70%;
+        
+//     }
+// }
 .pageContainer {
     @include centeredGrid;
 }
-
+.socialmedia {
+    position: absolute;
+    bottom: 30px;
+    @include centeredGrid;
+    .socialmediaGrid {
+        padding: 20px;
+        @include centeredGrid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 30px;
+        img {
+            height: 30px;
+        }
+        a {
+            
+            background-color: crimson;
+            height: 30px;
+            width: 30px;
+            margin-bottom: -30px;
+        }
+    }
+    .emailGrid {
+        @include centeredGrid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 0;
+        margin-left: -15px;
+        img {
+            height: 30px;
+        }
+        a {
+            margin-left: -15px;
+        }
+    }
+}
 @media only screen and (min-width: 600px) {
     .MobileContactPhone {
         width: 230px;

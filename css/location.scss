@@ -14,7 +14,7 @@
     width: 70%;
     height: 1px;
     background-color: $navy;
-    margin: 10px 15% 20px;
+    margin: 18px 15% 18px;
 
 }
 
@@ -23,18 +23,18 @@
     width: 70vw;
     
 
-    iframe {
-        width: 80vw;
-        height: 300px;
-        margin: 30px 0;
-        border: $green 5px inset;
-    }
     img {
         width: 80%;
         margin: 30px 0;
         border: $navy 2px solid;
     }
 }
+    iframe {
+        width: 80vw;
+        height: 300px;
+        margin: 30px 0;
+        border: $green 5px inset;
+    }
 .address {
     text-align: center;
     @include centeredGrid;
@@ -51,11 +51,36 @@
 
 .citation {
     color: $cream;
-    top: 370px;
-    right: 35px;
+    position: relative;
+    // top: 420px;
+    // right: 35px;
     width: 100px;
+    margin-top: -90px;
+    margin-left: -70px;
     a {
         color: $cream;
     }
 }
 
+@media only screen and (min-width: 600px) {
+    .locationGrid {
+        
+        grid-area: 1fr ;
+        img {
+            width: 70%;
+        }}
+.address {
+    grid-template-columns: 1fr 1fr;
+    font-size: 2em;
+  
+}
+.citation {
+    margin-left: -720px;
+    margin-top: -140px;
+}
+
+.hoursMenu {
+    width: 50%;
+}
+    
+}

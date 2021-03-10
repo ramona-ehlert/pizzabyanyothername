@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <meta name="description"
         content="Delicous pizza and an amazing atmosphere. We are a lavish restaurant that specializes in good memories and amazing food.">
     <meta name="author" content="Jackson Oviatt">
@@ -17,13 +18,14 @@
 
     <meta property="og:url" content="https://whyareyoutabby.gq" />
     <meta property="og:type" content="website">
-    <meta property="og:image" content="../../media/arugulaMeta.jpg"/>
+    <meta property="og:image" content="../../media/arugulaMeta.jpg" />
     <meta property="og:title" content="Pizza by Any Other Name Restaurant" />
     <meta property="og:description" content="Delicous pizza and pasta, view our menu and more." />
     <title>Reservations</title>
     <link rel="stylesheet" href="../css/reservations.css">
 
 </head>
+
 <body>
     <header>
         <div class="headerGrid">
@@ -52,7 +54,7 @@
                             <a href="./catering.html">Catering</a>
 
                         </nav>
-                        
+
 
                     </div>
             </nav>
@@ -60,20 +62,19 @@
                 <a href="../index.html">Home</a>
                 <a href="menu/menuLanding.html" id="menuHoverDesktop">Menu</a>
                 <div class="foodMenuNavIndentedGrid">
-                    <a href="menu/menuPizza.html" >Pizza</a>
-                    <a href="menu/menuPasta.html" >Pasta</a>
-                    <a href="menu/menuEntrees.html" >Entrees</a>
-                    <a href="menu/menuDrink.html" >Wine and Beer</a>
+                    <a href="menu/menuPizza.html">Pizza</a>
+                    <a href="menu/menuPasta.html">Pasta</a>
+                    <a href="menu/menuEntrees.html">Entrees</a>
+                    <a href="menu/menuDrink.html">Wine and Beer</a>
                 </div>
-                
+
                 <a href="./location.html">Location</a>
                 <a href="./aboutUs.html">About Us</a>
                 <a href="./catering.html">Catering</a>
                 <a href="./reservations.html">Reservations</a>
             </nav>
             <div class="headerLogo">
-                <img src="../media/pizzaByAnyNameLogo.png"
-                    alt="The logo for pizza by any other name, a cartoon pizza">
+                <img src="../media/pizzaByAnyNameLogo.png" alt="The logo for pizza by any other name, a cartoon pizza">
             </div>
             <div class="MobileContactPhone">
                 <!-- <input type="checkbox" name="mobile-menu-checkbox" id="contact-us-checkbox"> -->
@@ -81,17 +82,44 @@
                 <a href="">403 555 5555</a>
             </div>
         </div>
-        <div class="banner">
+        <!-- <div class="banner">
             <img src="../../media/headerPizzaBanner.png" alt="">
             <p class="citation">Photo by
                 <a href="https://www.pexels.com/photo/person-holding-pizza-on-wooden-board-3762075/">Horizon
                 </a>Content from <a
                     href="https://www.pexels.com/photo/person-holding-pizza-on-wooden-board-3762075/">Pexels</a>
             </p>
-        </div>
+        </div> -->
+        <section class="reservationForm">
+            <h2>Reservations</h2>
+            <p>Please submit 48 hours before requested time</p>
+            <p>First Name:<input type="text">
+                Last Name:<input type="text">
+                Number of Guests:<input type="number">
+                Special Requests:<input type="text">
+                <label for="reservationTime">Time of reservation</label>
+                <select id="reservationTime" name="reservationTime">
+                    <option value="oneA">4:00pm</option>
+                    <option value="twoA">4:30pm</option>
+                    <option value="threeA">5:00pm</option>
+                    <option value="fourA">5:30pm</option>
+                    <option value="one">6:00pm</option>
+                    <option value="two">6:30pm</option>
+                    <option value="three">7:00pm</option>
+                    <option value="four">7:30pm</option>
+                    <option value="five">8:00pm</option>
+                    <option value="six">8:30pm</option>
+                    <option value="seven">9:00pm</option>
+                    <option value="eight">9:30pm</option>
+                    <option value="nine">10:00pm</option>
+                </select>
+            </p>
+            <button>Submit</button>
+        </section>
 
 
 
     </header>
 </body>
+
 </html>

@@ -207,12 +207,6 @@ a, p {
   width: 20px;
 }
 
-.banner img {
-  width: 100vw;
-  opacity: 70%;
-  z-index: -5;
-}
-
 .pageContainer {
   display: -ms-grid;
   display: grid;
@@ -220,6 +214,64 @@ a, p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.socialmedia {
+  position: absolute;
+  bottom: 30px;
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.socialmedia .socialmediaGrid {
+  padding: 20px;
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -webkit-column-gap: 30px;
+          column-gap: 30px;
+}
+
+.socialmedia .socialmediaGrid img {
+  height: 30px;
+}
+
+.socialmedia .socialmediaGrid a {
+  background-color: crimson;
+  height: 30px;
+  width: 30px;
+  margin-bottom: -30px;
+}
+
+.socialmedia .emailGrid {
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -webkit-column-gap: 0;
+          column-gap: 0;
+  margin-left: -15px;
+}
+
+.socialmedia .emailGrid img {
+  height: 30px;
+}
+
+.socialmedia .emailGrid a {
+  margin-left: -15px;
 }
 
 @media only screen and (min-width: 600px) {
@@ -330,5 +382,53 @@ a, p {
     background-color: #e2866d99;
     display: block;
   }
+}
+
+.reservationForm {
+  width: 100vw;
+  background-color: #a0b7a4;
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 30px 0;
+}
+
+.reservationForm h2 {
+  margin-bottom: 15px;
+}
+
+.reservationForm p {
+  width: 80%;
+}
+
+.reservationForm p input {
+  background-color: #fdf5ed;
+  width: 100%;
+  padding: 12px 0px;
+  margin: 8px 0;
+  outline: none;
+  border: 1px solid #1e2744;
+  border-radius: 4px;
+}
+
+.reservationForm p:nth-child(2) {
+  width: 200px;
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+.reservationForm p select {
+  background-color: #fdf5ed;
+}
+
+.reservationForm button {
+  padding: 10px 20px;
+  background-color: #fdf5ed;
+  border: 1px solid #1e2744;
+  outline: none;
+  margin-top: 15px;
 }
 /*# sourceMappingURL=reservations.css.map */

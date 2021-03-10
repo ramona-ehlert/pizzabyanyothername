@@ -209,12 +209,6 @@ a, p {
   width: 20px;
 }
 
-.banner img {
-  width: 100vw;
-  opacity: 70%;
-  z-index: -5;
-}
-
 .pageContainer {
   display: -ms-grid;
   display: grid;
@@ -222,6 +216,64 @@ a, p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.socialmedia {
+  position: absolute;
+  bottom: 30px;
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.socialmedia .socialmediaGrid {
+  padding: 20px;
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -webkit-column-gap: 30px;
+          column-gap: 30px;
+}
+
+.socialmedia .socialmediaGrid img {
+  height: 30px;
+}
+
+.socialmedia .socialmediaGrid a {
+  background-color: crimson;
+  height: 30px;
+  width: 30px;
+  margin-bottom: -30px;
+}
+
+.socialmedia .emailGrid {
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -webkit-column-gap: 0;
+          column-gap: 0;
+  margin-left: -15px;
+}
+
+.socialmedia .emailGrid img {
+  height: 30px;
+}
+
+.socialmedia .emailGrid a {
+  margin-left: -15px;
 }
 
 @media only screen and (min-width: 600px) {
@@ -523,7 +575,7 @@ a, p {
   width: 70%;
   height: 1px;
   background-color: #1e2744;
-  margin: 10px 15% 20px;
+  margin: 18px 15% 18px;
 }
 
 .locationGrid {
@@ -536,17 +588,17 @@ a, p {
   width: 70vw;
 }
 
-.locationGrid iframe {
-  width: 80vw;
-  height: 300px;
-  margin: 30px 0;
-  border: #a0b7a4 5px inset;
-}
-
 .locationGrid img {
   width: 80%;
   margin: 30px 0;
   border: #1e2744 2px solid;
+}
+
+iframe {
+  width: 80vw;
+  height: 300px;
+  margin: 30px 0;
+  border: #a0b7a4 5px inset;
 }
 
 .address {
@@ -569,12 +621,35 @@ a, p {
 
 .citation {
   color: #ffede1;
-  top: 370px;
-  right: 35px;
+  position: relative;
   width: 100px;
+  margin-top: -90px;
+  margin-left: -70px;
 }
 
 .citation a {
   color: #ffede1;
+}
+
+@media only screen and (min-width: 600px) {
+  .locationGrid {
+    -ms-grid-row: 1;
+    grid-area: 1fr;
+  }
+  .locationGrid img {
+    width: 70%;
+  }
+  .address {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    font-size: 2em;
+  }
+  .citation {
+    margin-left: -720px;
+    margin-top: -140px;
+  }
+  .hoursMenu {
+    width: 50%;
+  }
 }
 /*# sourceMappingURL=location.css.map */
