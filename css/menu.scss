@@ -4,7 +4,7 @@
 .banner {
     @include centeredGrid;
     img {
-        width: 100vw;
+        width: 100%;
     }
     h2 {
         font-size: 3em;
@@ -163,6 +163,22 @@
         }
         >p {
             font-size: 22px;
+        }
+    }
+}
+
+@media only screen and (min-width: 1000px){ 
+    .menuDesktopContainer {
+        @include centeredGrid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .menuItemGrid {
+        grid-template-columns: 1fr 1fr 1fr;
+        .menuCard {
+           
+            img {
+                width: 20%;
+            }
         }
     }
 }

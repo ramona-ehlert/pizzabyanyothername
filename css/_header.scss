@@ -7,6 +7,9 @@
 .desktopNav {
     display: none;
 }
+.socialmediaDesktop {
+    display: none;
+}
 .colourfulMargin {
     display: none;
 }
@@ -28,28 +31,26 @@
 
     #mobile-menu-checkbox:checked ~ #mobile-hamburger-container {
         transition: all 0.7s ease-in-out;
-        
+
         .mobile-hamburger-line {
             transition: all 0.7s ease-in-out;
             z-index: 12;
             transform: rotate(45deg);
-            &:nth-child(2){
+            &:nth-child(2) {
                 display: none;
             }
-            &:nth-child(3){
+            &:nth-child(3) {
                 transform: rotate(135deg);
-                margin-top: -50px; 
+                margin-top: -50px;
             }
-
         }
     }
-    
 
     #mobile-hamburger-container {
         @include centeredGrid;
         width: 50px;
         height: 50px;
-       
+
         position: relative;
 
         .mobile-hamburger-line {
@@ -118,7 +119,7 @@
         color: $red;
     }
     img {
-        width: 20px;
+        height: 20px;
     }
 }
 
@@ -126,7 +127,7 @@
 //     img {
 //         width: 100vw;
 //         // opacity: 70%;
-        
+
 //     }
 // }
 .pageContainer {
@@ -137,16 +138,19 @@
     bottom: 60px;
     left: 25px;
     @include centeredGrid;
-    .socialmediaGrid {
+    
+    
+    }
+.socialmediaGrid {
         padding: 20px;
         @include centeredGrid;
         grid-template-columns: 1fr 1fr 1fr;
         column-gap: 30px;
         img {
             height: 30px;
+            
         }
         a {
-            
             // background-color: crimson;
             height: 30px;
             width: 30px;
@@ -167,70 +171,125 @@
             margin-left: -15px;
         }
     }
-}
 @media only screen and (min-width: 600px) {
     .MobileContactPhone {
         width: 230px;
         height: 50px;
         top: 20px;
         img {
-            width: 40px;
+            height: 40px;
         }
         a {
             font-size: 24px;
-            pointer-events: none;
+            
             text-decoration: none;
-        }
-    }
-
-.headerLogo {
-    // margin-right: -300px;
-    img {
-        width: 40vw;
-    }
-}
-#mobile-hamburger-menu {
-  
-    #mobile-menu-checkbox {
-        width: 80px;
-        height: 80px;
-      
-    }
-    #mobile-hamburger-container {
-       
-        width: 80px;
-        height: 80px;
-    
-
-        .mobile-hamburger-line {
-            width: 60px;
-            height: 6px;
+            
         
         }
+        &:nth-child(2){
+            pointer-events: none;
+            }
     }
-    #mobile-header-menu {
-        
-        nav {
-            display: grid;
-            padding-left: 40px;
 
+    .headerLogo {
+        // margin-right: -300px;
+        img {
+            width: 40vw;
+        }
+    }
+    #mobile-hamburger-menu {
+        #mobile-menu-checkbox {
+            width: 80px;
+            height: 80px;
+        }
+        #mobile-hamburger-container {
+            width: 80px;
+            height: 80px;
+
+            .mobile-hamburger-line {
+                width: 60px;
+                height: 6px;
+            }
+        }
+        #mobile-menu-checkbox:checked ~ #mobile-hamburger-container {
+            .mobile-hamburger-line {
+                margin-left: -60px;
+                &:nth-child(3) {
+                    transform: rotate(135deg);
+                    margin-top: -80px;
+                }
+            }
+        }
+        #mobile-header-menu {
+            width: 50vw;
+            nav {
+                margin-left: 60px;
+                margin-top: 100px;
+                display: grid;
+                // padding-left: 40px;
+
+                a {
+                    font-size: 28px;
+                }
+                .foodMenuNavIndented {
+                    font-size: 20px;
+                    margin: 10px 0px 0px 60px;
+                }
+            }
+        }
+        .socialmediaGrid {
+            img {
+                height: 50px;
+            }
+            a {
+                height: 50px;
+                width: 50px;
+                margin-bottom: -50px;
+               
+            }
+        }
+        .emailGrid {
             a {
                 font-size: 24px;
             }
-            .foodMenuNavIndented {
-                font-size: 18px;
-                margin: 10px 0px 0px 60px;
-            }
+            img {
+                height: 50px;
+
+        }
         }
     }
 }
-
-
-}
-
 @media only screen and (min-width: 1000px) {
+    header {
+        height: 200px;
+    }
     .mobile-hamburger-line {
         display: none;
+    }
+    .MobileContactPhone {
+        position: absolute;
+    }
+    .socialmediaDesktop {
+        display: block;
+        position: absolute;
+        top: 80px;
+        right: 20px;
+        @include centeredGrid;
+        
+        .socialmediaGrid {
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            row-gap: 30px;
+            column-gap: 0;
+            a {
+                // background-color: crimson;
+                margin-right: -100px;
+                width: 80px;
+                height: 80px;
+                // padding: 10px;
+            }
+        }
+
     }
     #mobile-menu-checkbox {
         display: none;
@@ -240,54 +299,56 @@
     }
     .headerLogo {
         img {
-            width: 150px;
+            width: 225px;
             position: absolute;
             left: 30px;
             top: 20px;
         }
     }
     .desktopNav {
-        
+        display: inline-block;
+        position: absolute;
+        top: 0px;
+        right: 27vw;
+        left: 240px;
+        top: 70px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        padding: none;
+
+        >a {
+            transition: 0.2s all ease-in;
+            font-size: 22px;
+            text-decoration: none; 
+            &:hover {
             
+            // transition: 0.5s all ease-in;
+            color: $red;
+        }
+        }
+       
+        .foodMenuNavIndentedGrid {
+            margin: 10px 0px 0px 18%;
+            display: none;
+            a {
+                font-size: 14px;
+                padding: 5px;
+            }
+        }
+        #menuHoverDesktop:hover ~ .foodMenuNavIndentedGrid {
             display: inline-block;
             position: absolute;
-            top: 0px;
-            right: 360px;
-            left: 170px;
-            top: 60px;
+            top: 10px;
+            left: 20px;
             display: grid;
-            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-            padding: none;
-           
-            a {
-                font-size: 18px;
-            }
-            .foodMenuNavIndentedGrid {
-                
-                margin: 10px 0px 0px 60px;
-                display: none;
-                a {
-                    font-size: 14px;
-                }
-
-            }
-            #menuHoverDesktop:hover ~ .foodMenuNavIndentedGrid {
-                display: inline-block;
-                position: absolute;
-                top: 10px;
-                left: 20px;
-                display: grid;
-                
-            }
-            .foodMenuNavIndentedGrid:hover {
-                display: inline-block;
-                position: absolute;
-                top: 10px;
-                left: 20px;
-                display: grid;
-                
-            }
-        
+        }
+        .foodMenuNavIndentedGrid:hover {
+            display: inline-block;
+            position: absolute;
+            top: 10px;
+            left: 20px;
+            display: grid;
+        }
     }
     .colourfulMargin {
         position: absolute;
@@ -298,6 +359,6 @@
         height: 1300px;
         background-color: #e2866d99;
         display: block;
-    //     opacity: 0;
+        //     opacity: 0;
     }
 }

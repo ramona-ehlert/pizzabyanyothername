@@ -186,7 +186,7 @@
         width: 20vw;
         height: 30vw;
         position: absolute;
-        right: 230px;
+        right: 15vw;
         top: 200px;
         border-radius: 200px;
         z-index: 6;
@@ -207,7 +207,7 @@
         display: inline-block;
         .citation {
             top: 230px;
-            right: 270px;
+            right: 22vw;
             color: $cream;
             z-index: 7;
             width: 80px;
@@ -222,19 +222,19 @@
         top: 0;
         right: 0;
         bottom: 0;
-        width: 350px;
+        width: 25vw;
         height: 1300px;
     //     opacity: 0;
     }
     .homePageIntroGrid {
         position: absolute;
         // left: 250px;
-        width: 200px;
+        width: 30vw;
         height: 500px;
-        top: 200px;
-        right: 70vw;
+        top: 220px;
+        right: 60vw;
         z-index: 100;
-        
+        column-gap: 5vw;
         .introWords {
             color: $navy;
             text-shadow: none;
@@ -256,10 +256,11 @@
         
         img {
             width: 150px;
-            height: 150px;border: $red 5px solid;
+            height: 150px;
+            border: $red 5px solid;
         }
         .citation {
-            top: 500px;
+            top: 520px;
             right: 0px;
             font-family: "open-sans", "sans-serif";
             color: $navy;
@@ -305,8 +306,8 @@
         }
         .citation {
             position: absolute;
-            top: 980px;
-            left: 330px;
+            left: 35vw;
+            top: 950px;
             color: $cream;
             font-size: 8px;
             width: 100px;
@@ -316,18 +317,19 @@
     }
     .hoursMenu {
         background-color: $navy;
-        width: 324px;
-        height: 600px;
+        width: 25vw;
+        height: 590px;
         z-index: 5;
         position: absolute;
         right: 0px;
         top: 720px;
-        padding: 25px 13px;
+        padding: 25px 0;
         a {
-            margin: 40px 0;
+            margin: 40px 10px;
         }
         h3 {
             margin: 30px 0;
+          
         }
     }
 }

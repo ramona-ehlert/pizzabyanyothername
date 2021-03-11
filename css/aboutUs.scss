@@ -6,15 +6,16 @@
 .banner {
     width: 100vw;
     @include centeredGrid;
-    h2 {
-        margin: 20px 0 20px;
-    }
+   
     img {
         width: 100%;
     }
 }
 
-article {
+article { 
+    h2 {
+        margin: 20px 0 20px;
+    }
     @include centeredGrid;
     img {
         width: 80%;
@@ -41,11 +42,18 @@ article {
 } 
 .citation {
     position: relative;
+    margin-bottom: -30px;
+    margin-left: 200px;
 }
 footer {
     margin-top: 0;
     }
 
+    @media only screen and (max-width: 600px) {
+        .citation {
+            margin-bottom: 0;
+        }
+    }
     @media only screen and (min-width: 600px) {
         .banner {
             
@@ -74,4 +82,28 @@ footer {
              height: 337.5px;
          }
      }
+    }
+    @media only screen and (min-width: 1000px) {
+        .banner {
+            position: absolute;
+            z-index: -5;
+            opacity: .34;
+        }
+       
+        article { 
+            h2 {
+            margin-left: 20px;
+        }
+            padding:  0px 100px 20px ;
+           img {
+               width: 40%;
+               margin-right: 100px;
+               border-color: $navy;
+           }
+           #verticalCouple {
+               margin-right: 0;
+               width: 30%;
+           }
+
+        }
     }

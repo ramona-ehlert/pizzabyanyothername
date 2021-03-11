@@ -91,6 +91,10 @@ a, p {
   display: none;
 }
 
+.socialmediaDesktop {
+  display: none;
+}
+
 .colourfulMargin {
   display: none;
 }
@@ -230,7 +234,7 @@ a, p {
 }
 
 .MobileContactPhone img {
-  width: 20px;
+  height: 20px;
 }
 
 .pageContainer {
@@ -254,7 +258,7 @@ a, p {
           align-items: center;
 }
 
-.socialmedia .socialmediaGrid {
+.socialmediaGrid {
   padding: 20px;
   display: -ms-grid;
   display: grid;
@@ -268,18 +272,18 @@ a, p {
           column-gap: 30px;
 }
 
-.socialmedia .socialmediaGrid img {
+.socialmediaGrid img {
   height: 30px;
 }
 
-.socialmedia .socialmediaGrid a {
+.socialmediaGrid a {
   height: 30px;
   width: 30px;
   margin-bottom: -30px;
   z-index: 15;
 }
 
-.socialmedia .emailGrid {
+.emailGrid {
   display: -ms-grid;
   display: grid;
   justify-items: center;
@@ -294,11 +298,11 @@ a, p {
   margin-top: 10px;
 }
 
-.socialmedia .emailGrid img {
+.emailGrid img {
   height: 30px;
 }
 
-.socialmedia .emailGrid a {
+.emailGrid a {
   margin-left: -15px;
 }
 
@@ -309,12 +313,14 @@ a, p {
     top: 20px;
   }
   .MobileContactPhone img {
-    width: 40px;
+    height: 40px;
   }
   .MobileContactPhone a {
     font-size: 24px;
-    pointer-events: none;
     text-decoration: none;
+  }
+  .MobileContactPhone:nth-child(2) {
+    pointer-events: none;
   }
   .headerLogo img {
     width: 40vw;
@@ -331,23 +337,81 @@ a, p {
     width: 60px;
     height: 6px;
   }
+  #mobile-hamburger-menu #mobile-menu-checkbox:checked ~ #mobile-hamburger-container .mobile-hamburger-line {
+    margin-left: -60px;
+  }
+  #mobile-hamburger-menu #mobile-menu-checkbox:checked ~ #mobile-hamburger-container .mobile-hamburger-line:nth-child(3) {
+    -webkit-transform: rotate(135deg);
+            transform: rotate(135deg);
+    margin-top: -80px;
+  }
+  #mobile-hamburger-menu #mobile-header-menu {
+    width: 50vw;
+  }
   #mobile-hamburger-menu #mobile-header-menu nav {
+    margin-left: 60px;
+    margin-top: 100px;
     display: -ms-grid;
     display: grid;
-    padding-left: 40px;
   }
   #mobile-hamburger-menu #mobile-header-menu nav a {
-    font-size: 24px;
+    font-size: 28px;
   }
   #mobile-hamburger-menu #mobile-header-menu nav .foodMenuNavIndented {
-    font-size: 18px;
+    font-size: 20px;
     margin: 10px 0px 0px 60px;
+  }
+  #mobile-hamburger-menu .socialmediaGrid img {
+    height: 50px;
+  }
+  #mobile-hamburger-menu .socialmediaGrid a {
+    height: 50px;
+    width: 50px;
+    margin-bottom: -50px;
+  }
+  #mobile-hamburger-menu .emailGrid a {
+    font-size: 24px;
+  }
+  #mobile-hamburger-menu .emailGrid img {
+    height: 50px;
   }
 }
 
 @media only screen and (min-width: 1000px) {
+  header {
+    height: 200px;
+  }
   .mobile-hamburger-line {
     display: none;
+  }
+  .MobileContactPhone {
+    position: absolute;
+  }
+  .socialmediaDesktop {
+    display: block;
+    position: absolute;
+    top: 80px;
+    right: 20px;
+    display: -ms-grid;
+    display: grid;
+    justify-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .socialmediaDesktop .socialmediaGrid {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    row-gap: 30px;
+    -webkit-column-gap: 0;
+            column-gap: 0;
+  }
+  .socialmediaDesktop .socialmediaGrid a {
+    margin-right: -100px;
+    width: 80px;
+    height: 80px;
   }
   #mobile-menu-checkbox {
     display: none;
@@ -356,7 +420,7 @@ a, p {
     min-height: 170px;
   }
   .headerLogo img {
-    width: 150px;
+    width: 225px;
     position: absolute;
     left: 30px;
     top: 20px;
@@ -365,24 +429,31 @@ a, p {
     display: inline-block;
     position: absolute;
     top: 0px;
-    right: 360px;
-    left: 170px;
-    top: 60px;
+    right: 27vw;
+    left: 240px;
+    top: 70px;
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     padding: none;
   }
-  .desktopNav a {
-    font-size: 18px;
+  .desktopNav > a {
+    -webkit-transition: 0.2s all ease-in;
+    transition: 0.2s all ease-in;
+    font-size: 22px;
+    text-decoration: none;
+  }
+  .desktopNav > a:hover {
+    color: #e2866d;
   }
   .desktopNav .foodMenuNavIndentedGrid {
-    margin: 10px 0px 0px 60px;
+    margin: 10px 0px 0px 18%;
     display: none;
   }
   .desktopNav .foodMenuNavIndentedGrid a {
     font-size: 14px;
+    padding: 5px;
   }
   .desktopNav #menuHoverDesktop:hover ~ .foodMenuNavIndentedGrid {
     display: inline-block;
@@ -793,7 +864,7 @@ footer p {
     width: 20vw;
     height: 30vw;
     position: absolute;
-    right: 230px;
+    right: 15vw;
     top: 200px;
     border-radius: 200px;
     z-index: 6;
@@ -804,7 +875,7 @@ footer p {
   }
   .homePageImageMenu .citation {
     top: 230px;
-    right: 270px;
+    right: 22vw;
     color: #ffede1;
     z-index: 7;
     width: 80px;
@@ -818,16 +889,18 @@ footer p {
     top: 0;
     right: 0;
     bottom: 0;
-    width: 350px;
+    width: 25vw;
     height: 1300px;
   }
   .homePageIntroGrid {
     position: absolute;
-    width: 200px;
+    width: 30vw;
     height: 500px;
-    top: 200px;
-    right: 70vw;
+    top: 220px;
+    right: 60vw;
     z-index: 100;
+    -webkit-column-gap: 5vw;
+            column-gap: 5vw;
   }
   .homePageIntroGrid .introWords {
     color: #1e2744;
@@ -849,7 +922,7 @@ footer p {
     border: #e2866d 5px solid;
   }
   .homePageIntroGrid .citation {
-    top: 500px;
+    top: 520px;
     right: 0px;
     font-family: "open-sans", "sans-serif";
     color: #1e2744;
@@ -887,8 +960,8 @@ footer p {
   }
   .freshIngredientsArticle .citation {
     position: absolute;
-    top: 980px;
-    left: 330px;
+    left: 35vw;
+    top: 950px;
     color: #ffede1;
     font-size: 8px;
     width: 100px;
@@ -898,16 +971,16 @@ footer p {
   }
   .hoursMenu {
     background-color: #1e2744;
-    width: 324px;
-    height: 600px;
+    width: 25vw;
+    height: 590px;
     z-index: 5;
     position: absolute;
     right: 0px;
     top: 720px;
-    padding: 25px 13px;
+    padding: 25px 0;
   }
   .hoursMenu a {
-    margin: 40px 0;
+    margin: 40px 10px;
   }
   .hoursMenu h3 {
     margin: 30px 0;
