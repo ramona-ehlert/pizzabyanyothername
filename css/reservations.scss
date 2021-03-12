@@ -2,12 +2,14 @@
 
 @import "_header.scss";
 
+@import "_footer.scss";
+
 .reservationForm {
     width: 100vw;
     background-color: $green;
     @include centeredGrid;
     padding: 30px 0;
-    
+    margin-bottom: 50px;
     h2 {
         margin-bottom: 15px;
     }
@@ -38,4 +40,64 @@
         outline: none;
         margin-top: 15px;
     }
+}
+
+.caro {
+    position: relative;
+    margin: 20px;
+    input {
+        margin: 20px;
+    }
+}
+
+.imageSpace {
+    height: 340px;
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+.caroCard {
+    width: 100%;
+    height: 250px;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    transition: all 0.2s ease-in-out;
+    opacity: 0;
+    transform: scale(0.8);
+}
+
+.caroCard img {
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 300px;
+}
+
+.caroCard div {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    
+    
+}
+
+.caroCard div h3 {
+    margin-bottom: 15px;
+}
+
+#carOne:checked~#pizzaOne,
+#carTwo:checked~#pizzaTwo,
+#carThree:checked~#pizzaThree {
+    opacity: 1;
+    transform: scale(1);
+}
+
+
+
+footer {
+    margin-top: 100px;
 }

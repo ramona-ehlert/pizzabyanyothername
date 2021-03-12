@@ -8,10 +8,9 @@
     }
     h2 {
         font-size: 3em;
-        font-family: 'Belleza', 'sans-serif';
+        font-family: "Belleza", "sans-serif";
         color: $navy;
-        margin-top: 20px
-        
+        margin-top: 20px;
     }
     .citation {
         color: $green;
@@ -55,17 +54,19 @@
     width: 25px;
     height: 25px;
     border-radius: 50%;
-    background-color: $white;
+    background-color: chartreuse;
     box-shadow: 0 0 10px $boxShadow;
     position: absolute;
     top: 385px;
     left: 50px;
     @include centeredGrid;
+    z-index: 12;
 
     a {
         width: 25px;
         height: 25px;
         position: absolute;
+        z-index: 13;
     }
 }
 #menuBackArrow {
@@ -104,35 +105,43 @@
     background-color: $navy;
     @include centeredGrid;
     border-radius: 15px;
+    .citation {
+        margin-top: -50px;
+        position: relative;
+        width: 60px;
+        z-index: 12;
+        color: $white;
+        font-size: 6px;
+         a{
+            color: $white;
+        }
+    }
     h4 {
         color: $green;
         padding-top: 10px;
         font-size: smaller;
-        font-family: 'open-sans', 'sans-serif';
+        font-family: "open-sans", "sans-serif";
     }
     img {
         width: 30vw;
         padding: 10px;
         z-index: 3;
+        border-radius: 20px;
     }
     .menuCardDescription {
-       
         text-align: center;
         padding: 10px;
         p {
-           font-size: 12px;
+            font-size: 12px;
             width: 29vw;
             color: $cream;
         }
     }
-    >p {
+    > p {
         color: $green;
         padding-bottom: 20px;
     }
-
-    
 }
-
 
 @media only screen and (min-width: 600px) {
     .InnerMenuNavigation {
@@ -140,6 +149,11 @@
             border-radius: 100px;
             height: 180px;
             width: 100px;
+            a {
+                z-index: 10;
+                height: 180px;
+                width: 100px;
+            }
             img {
                 width: 80px;
             }
@@ -159,68 +173,107 @@
             font-size: 1.5em;
         }
         .menuCardDescription {
-            p {font-size: 16px;}
+            p {
+                font-size: 16px;
+            }
         }
-        >p {
+        > p {
             font-size: 22px;
         }
     }
 }
 
-@media only screen and (min-width: 1000px){ 
-    .menuDesktopContainer {
-        @include centeredGrid;
-        grid-template-columns: 1fr 1fr;
+@media only screen and (min-width: 1000px) {
+    #menuBannerDesktop {
+        opacity: 45%;
+        position: absolute;
+        z-index: -5;
     }
-    .menuItemGrid {
-        grid-template-columns: 1fr 1fr 1fr;
-        .menuCard {
-           
-            img {
-                width: 20%;
+    .banner {
+        h2 {
+            margin-top: 10vw;
+        }
+        img {
+            width: 100vw;
+        }
+    }
+    .InnerMenuNavigation {
+        margin-bottom: 12vw;
+        .InnerMenuNavigationButton {
+            transition: all 0.8s ease-in-out;
+            p {
+                transition: all 0.5s ease-in-out;
+            }
+            &:hover {
+                background-color: $navy;
+                transition: all 0.8s ease-in-out;
+                p {
+                    color: $white;
+                    transition: all 0.8s ease-in-out;
+                }
             }
         }
     }
+
+    .menuCard {
+        img {
+            opacity: 0.6;
+            transition: all 0.5s ease-in-out;
+        }
+        &:hover {
+            img {
+                opacity: 1;
+                transition: all 0.5s ease-in-out;
+            }
+        }
+    }
+    .menuItemGrid {
+        grid-template-columns: 1fr 1fr 1fr;
+        row-gap: 30px;
+        column-gap: 0;
+        .menuCard {
+            width: 25vw;
+            
+            .menuCardDescription {
+                p {
+                    width: 15vw;
+                    padding: 0 0 10px;
+                }
+            }
+            img {
+                width: 20vw;
+            }
+            .citation {
+                position: relative;
+                font-size: 8px;
+                margin-right: -180px;
+            }
+        }
+    }
+
+    .menuCardDescription {
+        position: relative;
+        top: -70px;
+        height: 0;
+        text-align: center;
+        transition: all 1s ease-in;
+        p {
+            opacity: 0;
+            transition: all 0.5s ease-in;
+            z-index: 2;
+            width: 15vw;
+        }
+    }
+    &:hover > .menuCardDescription {
+        height: 60px;
+        transition: all 1s ease-in;
+        top: 0;
+        margin-bottom: 15px;
+        p {
+            opacity: 1;
+        }
+    }
+    &:hover > .menuCard {
+        margin-top: 0;
+    }
 }
-
-// @media only screen and (min-width: 600px) {
-//     .menuItemGrid {
-     
-      
-//         @include centeredGrid;
-//     grid-template-columns: 1fr 1fr 1fr;
-//     }
-//     .menuCard {
-//     width: 10vw;
-    
-//     img {
-//         width: 8vw;
-//         padding: 10px;
-//         z-index: 3;
-//     }
-
-//     .menuCardDescription {
-//         position: relative;
-//         top: -70px;
-//         height: 0;
-//         text-align: center;
-//         p {
-//             opacity: 0;
-//             transition: all 1s ease-in-out;
-//             z-index: 2;
-//             width: 29vw;
-//         }
-//     }
-//     &:hover > .menuCardDescription {
-//         height: 60px;
-//         transition: all 1s ease-in-out;
-//         top: 0;
-//         p {
-//             opacity: 1;
-//         }
-//     }
-//     &:hover > .menuCard {
-//         position: absolute;
-//     }
-// }
-// }
