@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Belleza&family=Open+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Belleza&family=Open+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Belleza&family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Belleza&family=Open+Sans&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -385,6 +386,8 @@ a, p {
   }
   .MobileContactPhone {
     position: absolute;
+    top: 50px;
+    width: 250px;
   }
   .socialmediaDesktop {
     display: block;
@@ -537,6 +540,158 @@ footer {
 footer p {
   font-size: 12px;
   color: #ffede1;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Belleza', sans-serif;
+  background-color: #ffede1;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Open Sans', 'sans-serif';
+  color: #1e2744;
+}
+
+a, p {
+  color: #1e2744;
+}
+
+.citation {
+  position: absolute;
+  right: 20px;
+  font-size: 8px;
+  font-family: 'open-sans', 'sans-serif';
+}
+
+.citation a {
+  font-weight: bolder;
+  text-decoration: none;
+}
+
+@media only screen and (min-width: 600px) {
+  .citation {
+    font-size: 12px;
+  }
+}
+
+.carousel {
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #1e2744;
+  border-radius: 15px;
+}
+
+.caro {
+  position: relative;
+  margin: 40px 20px 20px;
+}
+
+.caro input {
+  margin: 20px;
+}
+
+.imageSpace {
+  height: 380px;
+  width: 100%;
+  margin-bottom: 25px;
+}
+
+.caroCard {
+  width: 100%;
+  height: 250px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  opacity: 0;
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+}
+
+.caroCard img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-top: 40px;
+  border-radius: 10px;
+}
+
+.titleContainer {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+}
+
+.titleContainer h3, .titleContainer h4 {
+  color: #ffede1;
+  margin-bottom: 10px;
+  padding-top: 10px;
+}
+
+.titleContainer p {
+  margin-top: 290px;
+  color: #ffede1;
+}
+
+.titleContainer .citation {
+  margin-top: 0px;
+}
+
+.titleContainer .citation a {
+  color: #ffede1;
+}
+
+#carOne:checked ~ #pizzaOne,
+#carTwo:checked ~ #pizzaTwo,
+#carThree:checked ~ #pizzaThree,
+#carFour:checked ~ #pizzaFour,
+#carFive:checked ~ #pizzaFive {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+@media only screen and (min-width: 600px) {
+  .carousel {
+    margin: 0 60px;
+  }
+  .imageSpace {
+    height: 500px;
+  }
+  .caroCard {
+    display: -ms-grid;
+    display: grid;
+    justify-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .caroCard img {
+    height: 400px;
+    width: 130%;
+  }
+  .titleContainer h3 {
+    font-size: 1.5em;
+  }
+  .titleContainer h4 {
+    margin-top: -20px;
+  }
+  .titleContainer p {
+    margin-top: 420px;
+  }
 }
 
 .banner {
@@ -791,6 +946,7 @@ footer p {
     transition: all 0.8s ease-in-out;
   }
   .menuCard img {
+    margin: 10px;
     opacity: 0.6;
     -webkit-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
@@ -824,8 +980,7 @@ footer p {
   }
   .menuCardDescription {
     position: relative;
-    top: -70px;
-    height: 0;
+    margin-top: -20px;
     text-align: center;
     -webkit-transition: all 1s ease-in;
     transition: all 1s ease-in;
@@ -838,11 +993,8 @@ footer p {
     width: 15vw;
   }
   :hover > .menuCardDescription {
-    height: 60px;
     -webkit-transition: all 1s ease-in;
     transition: all 1s ease-in;
-    top: 0;
-    margin-bottom: 15px;
   }
   :hover > .menuCardDescription p {
     opacity: 1;

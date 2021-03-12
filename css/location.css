@@ -386,6 +386,8 @@ a, p {
   }
   .MobileContactPhone {
     position: absolute;
+    top: 50px;
+    width: 250px;
   }
   .socialmediaDesktop {
     display: block;

@@ -1,0 +1,108 @@
+@import "_globals.scss";
+
+.carousel {
+    @include centeredGrid;
+    background-color: $navy;
+    border-radius: 15px;
+}
+.caro {
+    position: relative;
+    margin: 40px 20px 20px;
+
+    input {
+        margin: 20px;
+    }
+}
+
+.imageSpace {
+    height: 380px;
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+.caroCard {
+    width: 100%;
+    height: 250px;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    transition: all 0.2s ease-in-out;
+    opacity: 0;
+    transform: scale(0.8);
+}
+
+.caroCard img {
+    width: 100%;
+    object-fit: cover;
+    margin-top: 40px;
+    border-radius: 10px;
+}
+
+.titleContainer {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    h3,h4 {
+        color: $cream;
+        margin-bottom: 10px;
+        padding-top: 10px;
+    }
+
+    p {
+        margin-top: 290px;
+        color: $cream;
+    }
+    .citation {
+        margin-top: 0px;
+        a {
+            color: $cream;
+        }
+    }
+}
+
+
+
+#carOne:checked~#pizzaOne,
+#carTwo:checked~#pizzaTwo,
+#carThree:checked~#pizzaThree, 
+#carFour:checked~#pizzaFour,
+#carFive:checked~#pizzaFive
+ {
+    opacity: 1;
+    transform: scale(1);
+}
+
+@media only screen and (min-width: 600px){
+    .carousel {
+        margin: 0 60px ;
+        
+    }
+
+    .imageSpace {
+        
+        height: 500px;
+    }
+
+    .caroCard {
+        @include centeredGrid;
+    img {
+        height: 400px;
+        width: 130%;
+        
+    }}
+    .titleContainer {
+        h3 {
+            font-size: 1.5em;
+        }
+        h4 {
+            margin-top: -20px;
+        }
+        p {
+            margin-top: 420px;
+        }
+    }
+}
