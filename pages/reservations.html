@@ -94,8 +94,8 @@
             </div>
             <div class="MobileContactPhone">
                 <!-- <input type="checkbox" name="mobile-menu-checkbox" id="contact-us-checkbox"> -->
-                <img src="../../media/contactUs.png" alt="a phone and an envelope. Contact Us.">
-                <a href="">403 555 5555</a>
+                <img src="../media/phone.png" alt="a phone and an envelope. Contact Us.">
+                <a href="">(403) 555-5555</a>
             </div>
         </div>
     </header>
@@ -107,13 +107,18 @@
                     href="https://www.pexels.com/photo/person-holding-pizza-on-wooden-board-3762075/">Pexels</a>
             </p>
         </div> -->
+    <section class="pageContainer">
+       
         <section class="reservationForm">
             <h2>Reservations</h2>
+            <div class="hr"></div>
             <p>Please submit 48 hours before requested time, or call <br>(403) 555-5555.</p>
+            <div class="hr"></div>
             <p>First Name:<input type="text">
                 Last Name:<input type="text">
+                Email:<input type="email">
                 Number of Guests:<input type="number">
-                Special Requests:<input type="text">
+                <!-- Special Requests:<input type="text"> -->
                 <label for="reservationTime">Time of reservation</label>
                 <select id="reservationTime" name="reservationTime">
                     <option value="oneA">4:00pm</option>
@@ -131,9 +136,12 @@
                     <option value="nine">10:00pm</option>
                 </select>
             </p>
-            <button>Submit</button>
+
+            <div class="submitButtonFake">Submit</div>
+            <input type="checkbox" id="submitButton">
+            <h3>You will receive an email shortly.<br>See you soon!</h3>
         </section>
-    <section class="carousel">
+        <!-- <section class="carousel">
         <div class="caro">
             <div class="imageSpace"></div>
             <input type="radio" name="pizza" id="carOne" checked>
@@ -169,11 +177,16 @@
             </div>
         </div>
         
+    </section> -->
+        <section class="reservationImg">
+            <img src="../media/reservationPhoto.jpeg" alt="a table set for a large dinner party at a restaurant">
+            <img src="../media/reservationImgSmall.jpeg" alt="tables set with plates and wine glasses">
+        </section>
     </section>
     <footer>
         <p>
             copyright Pizza by Any Name
-        </p> 
+        </p>
     </footer>
 
 

@@ -11,12 +11,8 @@
 }
 
 .hr {
-    width: 70%;
-    height: 1px;
-    background-color: $navy;
-    margin: 24px 15% 24px;
-   
 
+    margin: 24px 15% 24px;
 }
 
 .locationGrid {
@@ -84,4 +80,10 @@
     width: 50%;
 }
     
+}
+
+@media only screen and (min-width: 600px) {
+    header {
+        margin: 0;
+    }
 }

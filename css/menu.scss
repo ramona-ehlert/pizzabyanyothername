@@ -53,26 +53,27 @@
     }
 }
 .backArrow {
-    width: 25px;
-    height: 25px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
-    background-color: chartreuse;
+    background-color: $white;
+    border: $navy solid 2px;
     box-shadow: 0 0 10px $boxShadow;
     position: absolute;
-    top: 385px;
-    left: 50px;
+    margin-top: -75px;
+    left: 80px;
     @include centeredGrid;
     z-index: 12;
 
     a {
-        width: 25px;
-        height: 25px;
+        width: 40px;
+        height: 40px;
         position: absolute;
         z-index: 13;
     }
 }
 #menuBackArrow {
-    width: 18px;
+    width: 30px;
 }
 
 //  .upperPageDecoration {
@@ -87,14 +88,11 @@
 
     h2 {
         text-decoration: none;
-        margin: 20px 0;
+        margin: 20px 0 0;
     }
-    hr {
-        height: 2px;
-        background-color: $red;
-        margin: 20px 0;
-        width: 90%;
-    }
+.hr {
+    margin: 10px 0 20px;
+}
 }
 .menuItemGrid {
     @include centeredGrid;
@@ -169,6 +167,9 @@
             font-size: 2.5em;
             margin: 20px 0px 40px 30px;
         }
+        .hr {
+            margin: 0px 30px 40px;
+        }
     }
     .menuCard {
         h4 {
@@ -186,6 +187,9 @@
 }
 
 @media only screen and (min-width: 1000px) {
+    header {
+        margin: 0;
+    }
     #menuBannerDesktop {
         opacity: 45%;
         position: absolute;
@@ -197,10 +201,11 @@
         }
         img {
             width: 100vw;
+            
         }
     }
     .InnerMenuNavigation {
-        margin-bottom: 12vw;
+        margin-bottom: 20vw;
         .InnerMenuNavigationButton {
             transition: all 0.8s ease-in-out;
             p {
@@ -228,6 +233,18 @@
                 opacity: 1;
                 transition: all 0.5s ease-in-out;
             }
+        }
+    }
+
+    .menuDisplay {
+        h2 {
+            margin-left: 7vw;
+            font-size: 3em;
+            margin-top: -40px;
+        }
+        .hr {
+            margin: 0 7vw 50px;
+            width: 40%;
         }
     }
     .menuItemGrid {

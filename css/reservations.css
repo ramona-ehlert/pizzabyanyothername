@@ -33,6 +33,12 @@ a, p {
   text-decoration: none;
 }
 
+.hr {
+  width: 70%;
+  height: 1px;
+  background-color: #1e2744;
+}
+
 @media only screen and (min-width: 600px) {
   .citation {
     font-size: 12px;
@@ -68,6 +74,12 @@ a, p {
 .citation a {
   font-weight: bolder;
   text-decoration: none;
+}
+
+.hr {
+  width: 70%;
+  height: 1px;
+  background-color: #1e2744;
 }
 
 @media only screen and (min-width: 600px) {
@@ -308,7 +320,7 @@ a, p {
 
 @media only screen and (min-width: 600px) {
   .MobileContactPhone {
-    width: 230px;
+    width: 250px;
     height: 50px;
     top: 20px;
   }
@@ -379,7 +391,11 @@ a, p {
 
 @media only screen and (min-width: 1000px) {
   header {
+    width: 100vw;
     height: 200px;
+    margin-bottom: 20px;
+    -webkit-box-shadow: 0px 2px 5px #cfc2b1;
+            box-shadow: 0px 2px 5px #cfc2b1;
   }
   .mobile-hamburger-line {
     display: none;
@@ -387,7 +403,15 @@ a, p {
   .MobileContactPhone {
     position: absolute;
     top: 50px;
-    width: 250px;
+    right: 0px;
+    height: 70px;
+    width: 260px;
+  }
+  .MobileContactPhone a {
+    font-size: 24px;
+  }
+  .MobileContactPhone img {
+    height: 50px;
   }
   .socialmediaDesktop {
     display: block;
@@ -516,6 +540,12 @@ a, p {
   text-decoration: none;
 }
 
+.hr {
+  width: 70%;
+  height: 1px;
+  background-color: #1e2744;
+}
+
 @media only screen and (min-width: 600px) {
   .citation {
     font-size: 12px;
@@ -571,6 +601,12 @@ a, p {
 .citation a {
   font-weight: bolder;
   text-decoration: none;
+}
+
+.hr {
+  width: 70%;
+  height: 1px;
+  background-color: #1e2744;
 }
 
 @media only screen and (min-width: 600px) {
@@ -694,9 +730,46 @@ a, p {
   }
 }
 
+@media only screen and (min-width: 1000px) {
+  .imageSpace {
+    height: 80vh;
+  }
+  .caroCard {
+    display: -ms-grid;
+    display: grid;
+    justify-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .caroCard img {
+    height: 70vh;
+    width: 290%;
+    opacity: .6;
+    margin-top: 80px;
+  }
+  .titleContainer h3 {
+    font-size: 2em;
+    margin-top: 10px;
+  }
+  .titleContainer h4 {
+    font-size: 1.5em;
+    margin-bottom: 100px;
+  }
+  .titleContainer p {
+    margin: 60% 0 0 -100px;
+    font-size: 3em;
+    width: 500px;
+  }
+  .titleContainer .citation {
+    font-size: 12px;
+    margin-top: 20px;
+  }
+}
+
 .reservationForm {
   width: 100vw;
-  background-color: #a0b7a4;
+  background-color: #1e2744;
   display: -ms-grid;
   display: grid;
   justify-items: center;
@@ -708,42 +781,151 @@ a, p {
 }
 
 .reservationForm h2 {
-  margin-bottom: 15px;
+  color: #a0b7a4;
+}
+
+.reservationForm h3 {
+  margin-top: 10px;
+  opacity: 0;
+  height: 40px;
+  text-align: center;
+  -webkit-transition: 0.5s ease-in all;
+  transition: 0.5s ease-in all;
+  color: #ffede1;
+}
+
+.reservationForm .hr {
+  background-color: #a0b7a4;
+  height: 3px;
+  width: 60%;
+  margin: 20px 0 20px;
 }
 
 .reservationForm p {
   width: 80%;
+  color: #fdf5ed;
 }
 
 .reservationForm p input {
   background-color: #fdf5ed;
-  width: 100%;
-  padding: 12px 0px;
-  margin: 8px 0;
+  width: 95%;
+  padding: 12px 12px;
+  margin: 18px 0;
   outline: none;
   border: 1px solid #1e2744;
   border-radius: 4px;
 }
 
-.reservationForm p:nth-child(2) {
+.reservationForm p input:nth-child(4) {
+  margin: 0 29% 20px 51%;
+  width: 25%;
+}
+
+.reservationForm p:nth-child(3) {
   width: 200px;
   text-align: center;
   margin-bottom: 12px;
 }
 
-.reservationForm p select {
-  background-color: #fdf5ed;
+.reservationForm p:nth-child(4) {
+  margin-top: 20px;
 }
 
-.reservationForm button {
+.reservationForm p select {
+  background-color: #fdf5ed;
+  padding: 5px;
+  font-size: 16px;
+  margin-left: 10px;
+}
+
+.reservationForm .submitButtonFake {
   padding: 10px 20px;
   background-color: #fdf5ed;
   border: 1px solid #1e2744;
   outline: none;
-  margin-top: 15px;
+  margin-top: 25px;
+  border-radius: 5px;
+  font-size: 1.5em;
+}
+
+#submitButton {
+  z-index: 8;
+  width: 80px;
+  height: 40px;
+  margin-top: -40px;
+  opacity: 0;
+}
+
+#submitButton:checked ~ h3 {
+  opacity: 1;
+}
+
+.reservationImg {
+  width: 100vw;
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.reservationImg img {
+  width: 85%;
+  border: #1e2744 15px double;
 }
 
 footer {
-  margin-top: 100px;
+  margin-top: 40px;
+}
+
+@media only screen and (min-width: 600px) {
+  .reservationForm .hr {
+    width: 40%;
+  }
+  .reservationForm h2 {
+    font-size: 2em;
+  }
+  .reservationForm p {
+    width: 60%;
+    font-size: 18px;
+  }
+  .reservationForm p:nth-child(3) {
+    width: 250px;
+    text-align: center;
+    margin-bottom: 12px;
+  }
+  .reservationForm p:nth-child(5) {
+    line-height: 38px;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .pageContainer {
+    display: -ms-grid;
+    display: grid;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+  .reservationForm {
+    margin-bottom: 50px;
+    width: 500px;
+  }
+  .reservationImg {
+    height: 600px;
+    width: 425px;
+    display: -ms-grid;
+    display: grid;
+    justify-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .reservationImg img {
+    margin-bottom: 45px;
+  }
 }
 /*# sourceMappingURL=reservations.css.map */

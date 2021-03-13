@@ -7,45 +7,147 @@
 @import "_carousel.scss";
 .reservationForm {
     width: 100vw;
-    background-color: $green;
+    background-color: $navy;
     @include centeredGrid;
     padding: 30px 0;
     margin-bottom: 50px;
+
     h2 {
-        margin-bottom: 15px;
+        color: $green;
+    }
+    h3 {
+        margin-top: 10px;
+        opacity: 0;
+        height: 40px;
+        text-align: center;
+        transition: 0.5s ease-in all;
+        color: $cream;
+    }
+    .hr {
+        background-color: $green;
+        height: 3px;
+        width: 60%;
+        margin: 20px 0 20px;
     }
     p {
         width: 80%;
+        color: $white; // margin-top: 20px;
         input {
             background-color: $white;
-            width: 100%;
-            padding: 12px 0px;
-            margin: 8px 0;
+            width: 95%;
+            padding: 12px 12px;
+            margin: 18px 0;
             outline: none;
             border: 1px solid $navy;
             border-radius: 4px;
+            &:nth-child(4) {
+                margin: 0 29% 20px 51%;
+                width: 25%;
+                
+            }
+        
         }
-        &:nth-child(2) {
+        &:nth-child(3) {
             width: 200px;
             text-align: center;
             margin-bottom: 12px;
         }
+        &:nth-child(4) {
+            margin-top: 20px;
+        }
         select {
             background-color: $white;
+            padding: 5px;
+            font-size: 16px;
+            margin-left: 10px;
         }
     }
-    button {
+    .submitButtonFake {
         padding: 10px 20px;
         background-color: $white;
         border: 1px solid $navy;
         outline: none;
-        margin-top: 15px;
+        margin-top: 25px;
+        border-radius: 5px;
+        font-size: 1.5em;
     }
 }
 
-
-
-
-footer {
-    margin-top: 100px;
+#submitButton {
+    z-index: 8;
+    width: 80px;
+    height: 40px;
+    margin-top: -40px;
+    opacity: 0;
 }
+#submitButton:checked ~ h3 {
+    opacity: 1;
+}
+
+.reservationImg {
+    width: 100vw; 
+    @include centeredGrid;
+    img {
+        width: 85%;border: $navy 15px double;
+    }
+    
+}
+footer {
+    margin-top: 40px;
+}
+
+@media only screen and (min-width: 600px) {
+    .reservationForm {
+        .hr {
+            width: 40%;
+        }
+        h2 {
+            font-size: 2em;
+        }
+
+        p {
+            width: 60%;
+            font-size: 18px;
+            &:nth-child(3) {
+                width: 250px;
+                text-align: center;
+                margin-bottom: 12px;
+            }
+            &:nth-child(5) {
+                line-height: 38px;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+   .pageContainer {
+       display: grid;
+       align-items: flex-start;
+       grid-template-columns: 1fr 1fr;
+   }
+
+   .reservationForm {
+  
+    margin-bottom: 50px;
+    width: 500px;
+
+ 
+}
+
+
+.reservationImg {
+    height: 600px;
+    width: 425px;
+    // max-height: 100px;
+    @include centeredGrid;
+    img {
+        margin-bottom: 45px;
+        // width: 100%;
+        // border: $navy 15px double;
+        // height: 100%;
+    }
+    
+}
+}
+

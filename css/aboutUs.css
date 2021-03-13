@@ -32,6 +32,12 @@ a, p {
   text-decoration: none;
 }
 
+.hr {
+  width: 70%;
+  height: 1px;
+  background-color: #1e2744;
+}
+
 @media only screen and (min-width: 600px) {
   .citation {
     font-size: 12px;
@@ -67,6 +73,12 @@ a, p {
 .citation a {
   font-weight: bolder;
   text-decoration: none;
+}
+
+.hr {
+  width: 70%;
+  height: 1px;
+  background-color: #1e2744;
 }
 
 @media only screen and (min-width: 600px) {
@@ -307,7 +319,7 @@ a, p {
 
 @media only screen and (min-width: 600px) {
   .MobileContactPhone {
-    width: 230px;
+    width: 250px;
     height: 50px;
     top: 20px;
   }
@@ -378,7 +390,11 @@ a, p {
 
 @media only screen and (min-width: 1000px) {
   header {
+    width: 100vw;
     height: 200px;
+    margin-bottom: 20px;
+    -webkit-box-shadow: 0px 2px 5px #cfc2b1;
+            box-shadow: 0px 2px 5px #cfc2b1;
   }
   .mobile-hamburger-line {
     display: none;
@@ -386,7 +402,15 @@ a, p {
   .MobileContactPhone {
     position: absolute;
     top: 50px;
-    width: 250px;
+    right: 0px;
+    height: 70px;
+    width: 260px;
+  }
+  .MobileContactPhone a {
+    font-size: 24px;
+  }
+  .MobileContactPhone img {
+    height: 50px;
   }
   .socialmediaDesktop {
     display: block;
@@ -515,6 +539,12 @@ a, p {
   text-decoration: none;
 }
 
+.hr {
+  width: 70%;
+  height: 1px;
+  background-color: #1e2744;
+}
+
 @media only screen and (min-width: 600px) {
   .citation {
     font-size: 12px;
@@ -636,6 +666,9 @@ footer {
 }
 
 @media only screen and (min-width: 1000px) {
+  header {
+    margin: 0;
+  }
   .banner {
     position: absolute;
     z-index: -5;

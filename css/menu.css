@@ -33,6 +33,12 @@ a, p {
   text-decoration: none;
 }
 
+.hr {
+  width: 70%;
+  height: 1px;
+  background-color: #1e2744;
+}
+
 @media only screen and (min-width: 600px) {
   .citation {
     font-size: 12px;
@@ -68,6 +74,12 @@ a, p {
 .citation a {
   font-weight: bolder;
   text-decoration: none;
+}
+
+.hr {
+  width: 70%;
+  height: 1px;
+  background-color: #1e2744;
 }
 
 @media only screen and (min-width: 600px) {
@@ -308,7 +320,7 @@ a, p {
 
 @media only screen and (min-width: 600px) {
   .MobileContactPhone {
-    width: 230px;
+    width: 250px;
     height: 50px;
     top: 20px;
   }
@@ -379,7 +391,11 @@ a, p {
 
 @media only screen and (min-width: 1000px) {
   header {
+    width: 100vw;
     height: 200px;
+    margin-bottom: 20px;
+    -webkit-box-shadow: 0px 2px 5px #cfc2b1;
+            box-shadow: 0px 2px 5px #cfc2b1;
   }
   .mobile-hamburger-line {
     display: none;
@@ -387,7 +403,15 @@ a, p {
   .MobileContactPhone {
     position: absolute;
     top: 50px;
-    width: 250px;
+    right: 0px;
+    height: 70px;
+    width: 260px;
+  }
+  .MobileContactPhone a {
+    font-size: 24px;
+  }
+  .MobileContactPhone img {
+    height: 50px;
   }
   .socialmediaDesktop {
     display: block;
@@ -516,6 +540,12 @@ a, p {
   text-decoration: none;
 }
 
+.hr {
+  width: 70%;
+  height: 1px;
+  background-color: #1e2744;
+}
+
 @media only screen and (min-width: 600px) {
   .citation {
     font-size: 12px;
@@ -571,6 +601,12 @@ a, p {
 .citation a {
   font-weight: bolder;
   text-decoration: none;
+}
+
+.hr {
+  width: 70%;
+  height: 1px;
+  background-color: #1e2744;
 }
 
 @media only screen and (min-width: 600px) {
@@ -694,6 +730,43 @@ a, p {
   }
 }
 
+@media only screen and (min-width: 1000px) {
+  .imageSpace {
+    height: 80vh;
+  }
+  .caroCard {
+    display: -ms-grid;
+    display: grid;
+    justify-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .caroCard img {
+    height: 70vh;
+    width: 290%;
+    opacity: .6;
+    margin-top: 80px;
+  }
+  .titleContainer h3 {
+    font-size: 2em;
+    margin-top: 10px;
+  }
+  .titleContainer h4 {
+    font-size: 1.5em;
+    margin-bottom: 100px;
+  }
+  .titleContainer p {
+    margin: 60% 0 0 -100px;
+    font-size: 3em;
+    width: 500px;
+  }
+  .titleContainer .citation {
+    font-size: 12px;
+    margin-top: 20px;
+  }
+}
+
 .banner {
   display: -ms-grid;
   display: grid;
@@ -766,15 +839,16 @@ a, p {
 }
 
 .backArrow {
-  width: 25px;
-  height: 25px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
-  background-color: chartreuse;
+  background-color: #fdf5ed;
+  border: #1e2744 solid 2px;
   -webkit-box-shadow: 0 0 10px #cfc2b1;
           box-shadow: 0 0 10px #cfc2b1;
   position: absolute;
-  top: 385px;
-  left: 50px;
+  margin-top: -75px;
+  left: 80px;
   display: -ms-grid;
   display: grid;
   justify-items: center;
@@ -785,14 +859,14 @@ a, p {
 }
 
 .backArrow a {
-  width: 25px;
-  height: 25px;
+  width: 40px;
+  height: 40px;
   position: absolute;
   z-index: 13;
 }
 
 #menuBackArrow {
-  width: 18px;
+  width: 30px;
 }
 
 .menuDisplay {
@@ -801,14 +875,11 @@ a, p {
 
 .menuDisplay h2 {
   text-decoration: none;
-  margin: 20px 0;
+  margin: 20px 0 0;
 }
 
-.menuDisplay hr {
-  height: 2px;
-  background-color: #e2866d;
-  margin: 20px 0;
-  width: 90%;
+.menuDisplay .hr {
+  margin: 10px 0 20px;
 }
 
 .menuItemGrid {
@@ -901,6 +972,9 @@ a, p {
     font-size: 2.5em;
     margin: 20px 0px 40px 30px;
   }
+  .menuDisplay .hr {
+    margin: 0px 30px 40px;
+  }
   .menuCard h4 {
     font-size: 1.5em;
   }
@@ -913,6 +987,9 @@ a, p {
 }
 
 @media only screen and (min-width: 1000px) {
+  header {
+    margin: 0;
+  }
   #menuBannerDesktop {
     opacity: 45%;
     position: absolute;
@@ -925,7 +1002,7 @@ a, p {
     width: 100vw;
   }
   .InnerMenuNavigation {
-    margin-bottom: 12vw;
+    margin-bottom: 20vw;
   }
   .InnerMenuNavigation .InnerMenuNavigationButton {
     -webkit-transition: all 0.8s ease-in-out;
@@ -955,6 +1032,15 @@ a, p {
     opacity: 1;
     -webkit-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
+  }
+  .menuDisplay h2 {
+    margin-left: 7vw;
+    font-size: 3em;
+    margin-top: -40px;
+  }
+  .menuDisplay .hr {
+    margin: 0 7vw 50px;
+    width: 40%;
   }
   .menuItemGrid {
     -ms-grid-columns: 1fr 1fr 1fr;

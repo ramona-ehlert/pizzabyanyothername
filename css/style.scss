@@ -116,6 +116,10 @@
             top: 40vw;
         }
     }
+    header {
+        width: 75vw;
+        justify-self: left;
+    }
 
     .homePageIntroGrid {
         width: 80%;
@@ -185,12 +189,15 @@
     #backgroundIndexPastaImage {
         width: 20vw;
         height: 30vw;
+        // width: 20vw;
         position: absolute;
         right: 15vw;
         top: 200px;
         border-radius: 200px;
         z-index: 6;
         border: $navy 5px solid;
+        max-height: 500px;
+        max-width: 333.333333px;
     }
 // .citation {
 //     top: 230px;
@@ -331,5 +338,8 @@
             margin: 30px 0;
           
         }
+    }
+    footer {
+        margin-top: 0;
     }
 }
