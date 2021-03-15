@@ -3,14 +3,26 @@
 footer {
     @include centeredGrid;
     background-color: $navy;
-    height: 40px;
+    height: 60px;
     width: 100%;
     margin-top: 20px;
    box-shadow: 0px -2px 5px $green;
    
  
-    p {
+    p{
         font-size: 12px;
         color: $cream;
+        position: absolute;
+        left: 10px;
+        margin-top: 10px;
     }
+    div { position: absolute;
+        right: 10px;
+        margin-top: 25px;
+        color: $cream;
+        a {
+            color: $cream;
+        }
+    }
+    
 }

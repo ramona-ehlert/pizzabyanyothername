@@ -18,26 +18,25 @@
 .locationGrid {
     @include centeredGrid;
     width: 70vw;
+   iframe {
+        width: 80vw;
+        height: 300px;
+        margin: 30px 10vw;
+        border: $green 8px double;
+    }
+}
     
-
+.address {
+    text-align: center;
+    @include centeredGrid;
+    background-color: $green;
+    width: 100vw;
+    padding-top: 20px;
     img {
         width: 80%;
         margin: 30px 0;
         border: $navy 2px solid;
     }
-}
-    iframe {
-        width: 80vw;
-        height: 300px;
-        margin: 30px 0;
-        border: $green 5px inset;
-    }
-.address {
-    text-align: center;
-    @include centeredGrid;
-    background-color: #a0b7a4cc;
-    width: 100vw;
-    padding-top: 20px;
 }
 
 .hoursMenu {
@@ -61,15 +60,20 @@
 
 @media only screen and (min-width: 600px) {
     .locationGrid {
-        
-        grid-area: 1fr ;
-        img {
-            width: 70%;
-        }}
+        margin: 0 10%;
+        }
 .address {
     grid-template-columns: 1fr 1fr;
     font-size: 2em;
-  
+    .citation {
+       margin-right: -1500px;
+    }
+  img {
+            width: 70%;
+            max-width: 400px;
+            margin-bottom: 20px;
+        }
+    
 }
 .citation {
     margin-left: -720px;
@@ -82,8 +86,36 @@
     
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 1000px) {
     header {
         margin: 0;
+    }
+
+    .hoursMenu {
+        width: 350px;
+        margin-left: 50px;
+        // margin-top: 20px;
+    }
+        .address {
+            .citation {
+                margin-right: -2000px;
+            }
+        }
+        .locationGrid {
+            // row-gap: 20px;
+           
+            grid-template-columns: 1fr 1fr;
+            iframe {
+                width: 400px;
+                height: 386px;
+                margin: 30px 0;
+
+            }
+        }
+}
+
+@media only screen and (min-width: 1100px) {
+    .locationGrid {
+        margin: 0 15%;
     }
 }

@@ -67,7 +67,7 @@
         width: 70vw;
         height: 100vh;
         padding-top: 20px;
-        background-color: $green;
+        background-color: #A0B7A4;
         top: -130vh;
         opacity: 1;
         left: 0;
@@ -81,6 +81,7 @@
             a {
                 margin: 2vh 20px;
                 color: $cream;
+                // text-shadow: 2px 2px 2px $navy;
                 text-decoration: none;
                 font-size: 20px;
             }
@@ -342,11 +343,21 @@
         }
        
         .foodMenuNavIndentedGrid {
-            margin: 10px 0px 0px 18%;
+            margin: 15px 0px 0px 15%;
             display: none;
+            width: 100px;
+            
+          
+            padding-left: 20px;
             a {
                 font-size: 14px;
                 padding: 5px;
+                text-decoration: none;
+                transition: 0.5s all ease-in;
+                &:hover {
+                    color: $red;
+                    transition: 0.5s all ease-in;
+                }
             }
         }
         #menuHoverDesktop:hover ~ .foodMenuNavIndentedGrid {
@@ -355,6 +366,7 @@
             top: 10px;
             left: 20px;
             display: grid;
+
         }
         .foodMenuNavIndentedGrid:hover {
             display: inline-block;
@@ -362,6 +374,7 @@
             top: 10px;
             left: 20px;
             display: grid;
+           
         }
     }
     .colourfulMargin {

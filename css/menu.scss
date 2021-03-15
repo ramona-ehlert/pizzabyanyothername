@@ -53,27 +53,27 @@
     }
 }
 .backArrow {
-    width: 40px;
-    height: 40px;
+    width: 20px;
+    height: 20px;
     border-radius: 50%;
     background-color: $white;
     border: $navy solid 2px;
     box-shadow: 0 0 10px $boxShadow;
     position: absolute;
     margin-top: -75px;
-    left: 80px;
+    left: 30px;
     @include centeredGrid;
-    z-index: 12;
+    z-index: 10;
 
     a {
-        width: 40px;
-        height: 40px;
+        width: 20px;
+        height: 42px;
         position: absolute;
         z-index: 13;
     }
 }
 #menuBackArrow {
-    width: 30px;
+    width: 15px;
 }
 
 //  .upperPageDecoration {
@@ -90,9 +90,9 @@
         text-decoration: none;
         margin: 20px 0 0;
     }
-.hr {
-    margin: 10px 0 20px;
-}
+    .hr {
+        margin: 10px 0 20px;
+    }
 }
 .menuItemGrid {
     @include centeredGrid;
@@ -112,7 +112,7 @@
         z-index: 12;
         color: $white;
         font-size: 6px;
-         a{
+        a {
             color: $white;
         }
     }
@@ -121,6 +121,8 @@
         padding-top: 10px;
         font-size: smaller;
         font-family: "open-sans", "sans-serif";
+        // width: 100px;
+        text-align: center;
     }
     img {
         width: 30vw;
@@ -143,6 +145,99 @@
     }
 }
 
+.drinkMenuDisplay {
+    @include centeredGrid;
+    width: 100vw;
+
+    section {
+        @include centeredGrid;
+        text-align: center;
+        h2 {
+            font-family: "belleza", sans-serif;
+        }
+        img {
+            width: 70%;
+            margin: 20px 0;
+            border: $navy double 5px;
+        }
+        div {
+            margin: 10px 0;
+        }
+    }
+}
+#drinksTitle {
+    text-align: center;
+    margin: 30px 0 10px;
+    font-family: "belleza", sans-serif;
+}
+
+.drinkMenuPermission{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+}
+.drinkMenuPermissionBackground {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 15;
+    background-color: #1e2744ee;
+    h2 {
+        color: $cream;
+        width: 40%;
+        position: absolute;
+        right: 30%;
+        left: 30%;
+        top: 30%;
+        text-align: center;
+    }
+    div {
+        width: 30%;
+        height: 40px;
+        position: absolute;
+        left: 35%;
+        right: 35%;
+        @include centeredGrid;
+        border-radius: 20px;
+        background-color: $cream;
+       
+    }
+    .ageYesButton {
+        border: #A0B7A4 5px solid;
+        top: 45%;
+        font-family: 'open-sans', sans-serif;
+    }
+    .ageNoButton {
+        border: $red 5px solid;
+        top: 55%;
+        a {
+            font-family: 'open-sans', sans-serif;
+            @include centeredGrid;
+            width: 100%;
+            height: 100%;
+            text-decoration: none;
+        }
+    }
+}
+
+#ageYesCheckbox {
+    z-index: 20;
+    position: absolute;
+    top: 45%;
+    right: 35%;
+    left: 35%;
+    width: 30%;
+    height: 40px;
+    opacity: 0;
+}
+#ageYesCheckbox:checked~.drinkMenuPermissionBackground {
+    display: none;
+}
+#ageYesCheckbox:checked {
+    display: none;
+}
+
 @media only screen and (min-width: 600px) {
     .InnerMenuNavigation {
         .InnerMenuNavigationButton {
@@ -161,6 +256,18 @@
                 font-size: 1.7em;
             }
         }
+    }
+    .backArrow {
+        width: 40px;
+        height: 40px;
+        left: 60px;
+        a {
+            height: 40px;
+            width: 40px;
+        }
+    }
+    #menuBackArrow {
+        width: 30px;
     }
     .menuDisplay {
         h2 {
@@ -184,6 +291,32 @@
             font-size: 22px;
         }
     }
+    .drinkMenuDisplay {
+        grid-template-columns: 1fr 1fr;
+        section {
+            h2 {
+                font-size: 30px;
+            }
+        }
+    }
+    #drinksTitle {
+        font-size: 36px;
+        margin: 40px 0 20px;
+    }
+
+    .drinkMenuPermissionBackground {
+        h2 {
+            top: 30%;
+            font-size: 2em;
+        }
+        div {
+            height: 60px;
+            font-size: 2em;
+        }
+    }
+    #ageYesCheckbox {
+        height: 60px;
+    }
 }
 
 @media only screen and (min-width: 1000px) {
@@ -201,7 +334,6 @@
         }
         img {
             width: 100vw;
-            
         }
     }
     .InnerMenuNavigation {
@@ -253,12 +385,20 @@
         column-gap: 0;
         .menuCard {
             width: 25vw;
-            
+
             .menuCardDescription {
+                position: relative;
+                margin-top: -20px;
+                text-align: center;
+                transition: all 1s ease-in;
+                height: 80px;
                 p {
                     width: 15vw;
                     padding: 0 0 10px;
                 }
+            }
+            > p {
+                font-size: 28px;
             }
             img {
                 width: 20vw;
@@ -267,20 +407,16 @@
                 position: relative;
                 font-size: 8px;
                 margin-right: -180px;
+                margin-top: -150px;
             }
         }
     }
 
     .menuCardDescription {
-        position: relative;
-       margin-top: -20px;
-        text-align: center;
-        transition: all 1s ease-in;
         p {
             opacity: 0;
             transition: all 0.5s ease-in;
             z-index: 2;
-            width: 15vw;
         }
     }
     &:hover > .menuCardDescription {
@@ -292,7 +428,46 @@
             opacity: 1;
         }
     }
+
     &:hover > .menuCard {
         margin-top: 0;
     }
+
+    .drinkMenuDisplay {
+        // margin-top: -120px;
+        border: 10px $navy double;
+        width: 80%;
+        margin: 0 10%;
+        padding: 40px 0;
+
+        section {
+            h2 {
+                font-size: 30px;
+            }
+            img {
+                width: 25vw;
+            }
+        }
+    }
+
+    #drinksTitle {
+        // margin-bottom: 200px;
+        font-size: 36px;
+        margin: -50px 0 50px;
+    }
+
+    .drinkMenuPermissionBackground {
+        h2 {
+            top: 200px;
+            font-size: 2.5em;
+        }
+       
+        .ageYesButton {
+          top: 320px;
+        }
+        .ageNoButton {
+            top: 450px;
+        }
+    }
+   
 }

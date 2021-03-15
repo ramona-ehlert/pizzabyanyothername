@@ -22,8 +22,8 @@ a, p {
 }
 
 .citation {
-  position: absolute;
-  right: 20px;
+  z-index: 3;
+  margin-bottom: -20px;
   font-size: 8px;
   font-family: 'open-sans', 'sans-serif';
 }
@@ -65,8 +65,8 @@ a, p {
 }
 
 .citation {
-  position: absolute;
-  right: 20px;
+  z-index: 3;
+  margin-bottom: -20px;
   font-size: 8px;
   font-family: 'open-sans', 'sans-serif';
 }
@@ -179,7 +179,7 @@ a, p {
   width: 70vw;
   height: 100vh;
   padding-top: 20px;
-  background-color: #a0b7a4;
+  background-color: #A0B7A4;
   top: -130vh;
   opacity: 1;
   left: 0;
@@ -474,12 +474,22 @@ a, p {
     color: #e2866d;
   }
   .desktopNav .foodMenuNavIndentedGrid {
-    margin: 10px 0px 0px 18%;
+    margin: 15px 0px 0px 15%;
     display: none;
+    width: 100px;
+    padding-left: 20px;
   }
   .desktopNav .foodMenuNavIndentedGrid a {
     font-size: 14px;
     padding: 5px;
+    text-decoration: none;
+    -webkit-transition: 0.5s all ease-in;
+    transition: 0.5s all ease-in;
+  }
+  .desktopNav .foodMenuNavIndentedGrid a:hover {
+    color: #e2866d;
+    -webkit-transition: 0.5s all ease-in;
+    transition: 0.5s all ease-in;
   }
   .desktopNav #menuHoverDesktop:hover ~ .foodMenuNavIndentedGrid {
     display: inline-block;
@@ -529,8 +539,8 @@ a, p {
 }
 
 .citation {
-  position: absolute;
-  right: 20px;
+  z-index: 3;
+  margin-bottom: -20px;
   font-size: 8px;
   font-family: 'open-sans', 'sans-serif';
 }
@@ -560,15 +570,29 @@ footer {
       -ms-flex-align: center;
           align-items: center;
   background-color: #1e2744;
-  height: 40px;
+  height: 60px;
   width: 100%;
   margin-top: 20px;
-  -webkit-box-shadow: 0px -2px 5px #a0b7a4;
-          box-shadow: 0px -2px 5px #a0b7a4;
+  -webkit-box-shadow: 0px -2px 5px #CFDBD1;
+          box-shadow: 0px -2px 5px #CFDBD1;
 }
 
 footer p {
   font-size: 12px;
+  color: #ffede1;
+  position: absolute;
+  left: 10px;
+  margin-top: 10px;
+}
+
+footer div {
+  position: absolute;
+  right: 10px;
+  margin-top: 25px;
+  color: #ffede1;
+}
+
+footer div a {
   color: #ffede1;
 }
 
@@ -592,8 +616,8 @@ a, p {
 }
 
 .citation {
-  position: absolute;
-  right: 20px;
+  z-index: 3;
+  margin-bottom: -20px;
   font-size: 8px;
   font-family: 'open-sans', 'sans-serif';
 }
@@ -720,17 +744,11 @@ a, p {
   width: 70vw;
 }
 
-.locationGrid img {
-  width: 80%;
-  margin: 30px 0;
-  border: #1e2744 2px solid;
-}
-
-iframe {
+.locationGrid iframe {
   width: 80vw;
   height: 300px;
-  margin: 30px 0;
-  border: #a0b7a4 5px inset;
+  margin: 30px 10vw;
+  border: #CFDBD1 8px double;
 }
 
 .address {
@@ -741,9 +759,15 @@ iframe {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #a0b7a4cc;
+  background-color: #CFDBD1;
   width: 100vw;
   padding-top: 20px;
+}
+
+.address img {
+  width: 80%;
+  margin: 30px 0;
+  border: #1e2744 2px solid;
 }
 
 .hoursMenu {
@@ -765,16 +789,20 @@ iframe {
 
 @media only screen and (min-width: 600px) {
   .locationGrid {
-    -ms-grid-row: 1;
-    grid-area: 1fr;
-  }
-  .locationGrid img {
-    width: 70%;
+    margin: 0 10%;
   }
   .address {
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
     font-size: 2em;
+  }
+  .address .citation {
+    margin-right: -1500px;
+  }
+  .address img {
+    width: 70%;
+    max-width: 400px;
+    margin-bottom: 20px;
   }
   .citation {
     margin-left: -720px;
@@ -785,9 +813,31 @@ iframe {
   }
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 1000px) {
   header {
     margin: 0;
+  }
+  .hoursMenu {
+    width: 350px;
+    margin-left: 50px;
+  }
+  .address .citation {
+    margin-right: -2000px;
+  }
+  .locationGrid {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+  .locationGrid iframe {
+    width: 400px;
+    height: 386px;
+    margin: 30px 0;
+  }
+}
+
+@media only screen and (min-width: 1100px) {
+  .locationGrid {
+    margin: 0 15%;
   }
 }
 /*# sourceMappingURL=location.css.map */

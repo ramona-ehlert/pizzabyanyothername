@@ -111,12 +111,14 @@
     .imageSpace {
         
         height: 80vh;
+        min-height: 700px
     }
 
     .caroCard {
         @include centeredGrid;
     img {
         height: 70vh;
+        min-height: 600px;
         width: 290%;
         opacity: .6;
         margin-top: 80px;

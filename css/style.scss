@@ -116,10 +116,7 @@
             top: 40vw;
         }
     }
-    header {
-        width: 75vw;
-        justify-self: left;
-    }
+   
 
     .homePageIntroGrid {
         width: 80%;
@@ -186,13 +183,17 @@
 }
 
 @media only screen and (min-width: 1000px) {
+    header {
+        width: 75vw;
+        justify-self: left;
+    }
     #backgroundIndexPastaImage {
         width: 20vw;
         height: 30vw;
         // width: 20vw;
         position: absolute;
         right: 15vw;
-        top: 200px;
+        top: 240px;
         border-radius: 200px;
         z-index: 6;
         border: $navy 5px solid;
@@ -265,7 +266,14 @@
             width: 150px;
             height: 150px;
             border: $red 5px solid;
+            transition: 0.5s all ease-in;
+
+            &:hover {
+                border: $navy 5px solid;
+            }
         }
+        
+
         .citation {
             top: 520px;
             right: 0px;
@@ -323,9 +331,9 @@
             }}
     }
     .hoursMenu {
-        background-color: $navy;
+ 
         width: 25vw;
-        height: 590px;
+        height: 600px;
         z-index: 5;
         position: absolute;
         right: 0px;
