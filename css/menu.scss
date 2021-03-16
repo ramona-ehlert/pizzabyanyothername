@@ -3,6 +3,7 @@
 @import "_footer.scss";
 @import "_carousel.scss";
 
+
 .banner {
     @include centeredGrid;
     img {
@@ -15,12 +16,23 @@
         margin-top: 20px;
     }
     .citation {
-        color: $green;
+        color: $cream;
+        margin: -40px 0 0 140px;
         a {
-            color: $green;
+            color: $cream;
         }
     }
 }
+header {
+    .headerGrid {
+        .desktopNav {
+            a {
+                z-index: 10;
+            }
+        }
+    }
+}
+
 
 .InnerMenuNavigation {
     @include centeredGrid;
@@ -133,6 +145,8 @@
     .menuCardDescription {
         text-align: center;
         padding: 10px;
+        height: 70px;
+        margin-bottom: 20px;
         p {
             font-size: 12px;
             width: 29vw;
@@ -223,7 +237,7 @@
 
 #ageYesCheckbox {
     z-index: 20;
-    position: absolute;
+    position: fixed;
     top: 45%;
     right: 35%;
     left: 35%;
@@ -239,6 +253,11 @@
 }
 
 @media only screen and (min-width: 600px) {
+   .banner {
+       .citation {
+        margin: -60px 0 0 440px;
+       }
+   }
     .InnerMenuNavigation {
         .InnerMenuNavigationButton {
             border-radius: 100px;
@@ -278,11 +297,16 @@
             margin: 0px 30px 40px;
         }
     }
+    #pizzaSizes {
+        margin-left: 50px;
+        margin-bottom: 10px;
+    }
     .menuCard {
         h4 {
             font-size: 1.5em;
         }
         .menuCardDescription {
+            margin-bottom: 20px;
             p {
                 font-size: 16px;
             }
@@ -316,10 +340,11 @@
     }
     #ageYesCheckbox {
         height: 60px;
+        top: 45%;
     }
 }
 
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 1050px) {
     header {
         margin: 0;
     }
@@ -335,26 +360,37 @@
         img {
             width: 100vw;
         }
+        
+            .citation {
+                color: $navy;
+             margin: 10px 0 0 0;
+             a {
+                 color: $navy;
+             }
+            }
+        
     }
+
     .InnerMenuNavigation {
         margin-bottom: 20vw;
         .InnerMenuNavigationButton {
-            transition: all 0.8s ease-in-out;
+            transition: all 0.5s ease-in-out;
             p {
                 transition: all 0.5s ease-in-out;
             }
             &:hover {
-                background-color: $navy;
-                transition: all 0.8s ease-in-out;
-                p {
-                    color: $white;
-                    transition: all 0.8s ease-in-out;
-                }
+                box-shadow: 0px 0px 15px $navy;
+                transition: all 0.5s ease-in-out;
+            
             }
         }
     }
-
+    #pizzaSizes {
+        margin-left: 7vw;
+        margin-bottom: 20px;
+    }
     .menuCard {
+        padding-top: 10px;
         img {
             margin: 10px;
             opacity: 0.6;
@@ -369,6 +405,7 @@
     }
 
     .menuDisplay {
+        // margin-top: 10px;
         h2 {
             margin-left: 7vw;
             font-size: 3em;
@@ -389,6 +426,7 @@
             .menuCardDescription {
                 position: relative;
                 margin-top: -20px;
+                margin-bottom: 0;
                 text-align: center;
                 transition: all 1s ease-in;
                 height: 80px;
@@ -420,10 +458,7 @@
         }
     }
     &:hover > .menuCardDescription {
-        // height: 60px;
         transition: all 1s ease-in;
-        // top: 0;
-        // margin-bottom: 15px;
         p {
             opacity: 1;
         }
@@ -434,10 +469,9 @@
     }
 
     .drinkMenuDisplay {
-        // margin-top: -120px;
         border: 10px $navy double;
         width: 80%;
-        margin: 0 10%;
+        margin: 0 10% 120px;
         padding: 40px 0;
 
         section {
@@ -460,14 +494,28 @@
         h2 {
             top: 200px;
             font-size: 2.5em;
+           
         }
        
         .ageYesButton {
           top: 320px;
+          &:hover {
+            background-color: $green;
+        }
         }
         .ageNoButton {
             top: 450px;
+            &:hover {
+                background-color: #EBAA98;
+            }
         }
     }
-   
+    #ageYesCheckbox {
+        top: 320px;
+    }
+   #ageYesCheckbox:hover~.drinkMenuPermissionBackground {
+    .ageYesButton {
+        background-color: $green;
+    }
+   }
 }

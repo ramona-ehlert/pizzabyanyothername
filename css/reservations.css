@@ -331,7 +331,7 @@ a, p {
     font-size: 24px;
     text-decoration: none;
   }
-  .MobileContactPhone:nth-child(2) {
+  #phoneNumber {
     pointer-events: none;
   }
   .headerLogo img {
@@ -389,7 +389,7 @@ a, p {
   }
 }
 
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 1050px) {
   header {
     width: 100vw;
     height: 200px;
@@ -707,7 +707,11 @@ a, p {
 }
 
 .titleContainer .citation {
-  margin-top: 0px;
+  position: absolute;
+  top: 0px;
+  left: 5px;
+  color: #ffede1;
+  right: 0;
 }
 
 .titleContainer .citation a {
@@ -754,42 +758,10 @@ a, p {
   }
 }
 
-@media only screen and (min-width: 1000px) {
-  .imageSpace {
-    height: 80vh;
-    min-height: 700px;
-  }
-  .caroCard {
-    display: -ms-grid;
-    display: grid;
-    justify-items: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .caroCard img {
-    height: 70vh;
-    min-height: 600px;
-    width: 290%;
-    opacity: .6;
-    margin-top: 80px;
-  }
-  .titleContainer h3 {
-    font-size: 2em;
-    margin-top: 10px;
-  }
-  .titleContainer h4 {
-    font-size: 1.5em;
-    margin-bottom: 100px;
-  }
-  .titleContainer p {
-    margin: 60% 0 0 -100px;
-    font-size: 3em;
-    width: 500px;
-  }
-  .titleContainer .citation {
-    font-size: 12px;
-    margin-top: 20px;
+@media only screen and (min-width: 1050px) {
+  .carousel {
+    width: 40vw;
+    margin: 0 30vw;
   }
 }
 
@@ -865,6 +837,15 @@ a, p {
   font-size: 1.5em;
 }
 
+.citation {
+  color: #ffede1;
+  margin-top: -100px;
+}
+
+.citation a {
+  color: #ffede1;
+}
+
 #submitButton {
   z-index: 8;
   width: 80px;
@@ -918,7 +899,7 @@ footer {
   }
 }
 
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 1050px) {
   .pageContainer {
     display: -ms-grid;
     display: grid;
@@ -944,6 +925,9 @@ footer {
   }
   .reservationImg img {
     margin-bottom: 45px;
+  }
+  .citation {
+    margin-top: -175px;
   }
 }
 /*# sourceMappingURL=reservations.css.map */

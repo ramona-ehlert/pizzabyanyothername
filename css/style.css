@@ -331,7 +331,7 @@ a, p {
     font-size: 24px;
     text-decoration: none;
   }
-  .MobileContactPhone:nth-child(2) {
+  #phoneNumber {
     pointer-events: none;
   }
   .headerLogo img {
@@ -389,7 +389,7 @@ a, p {
   }
 }
 
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 1050px) {
   header {
     width: 100vw;
     height: 200px;
@@ -743,14 +743,11 @@ footer div a {
 }
 
 .citation {
-  top: 260px;
-  color: #1e2744;
-  right: 20px;
-  text-shadow: none;
+  color: #ffede1;
 }
 
 .citation a {
-  color: #1e2744;
+  color: #ffede1;
 }
 
 .homePageMargin {
@@ -787,20 +784,8 @@ footer div a {
   text-shadow: 1px 1px 4px #e2866d;
 }
 
-.homePageIntroGrid .introWords .roundIntroButtons {
-  position: absolute;
-  right: 50px;
-  width: 100px;
-  height: 100px;
-  margin-top: -15px;
-}
-
 .homePageIntroGrid #restaurantIntro {
   text-align: right;
-}
-
-.homePageIntroGrid #restaurantIntro .roundIntroButtons {
-  left: 50px;
 }
 
 .homePageIntroGrid img {
@@ -848,19 +833,13 @@ footer div a {
 }
 
 .freshIngredientsArticle p {
-  color: #1e2744;
   width: 65%;
   margin: 35px 0px;
 }
 
 .freshIngredientsArticle .citation {
-  position: absolute;
-  top: 1400px;
-  color: #ffede1;
-}
-
-.freshIngredientsArticle .citation a {
-  color: #ffede1;
+  margin-top: -50px;
+  position: relative;
 }
 
 @media only screen and (min-width: 600px) {
@@ -875,24 +854,10 @@ footer div a {
     width: 240px;
     font-size: 28px;
   }
-  .homePageIntroGrid .introWords .roundIntroButtons {
-    position: absolute;
-    right: 120px;
-    width: 220px;
-    height: 220px;
-  }
-  .homePageIntroGrid #restaurantIntro .roundIntroButtons {
-    left: 160px;
-  }
   .homePageIntroGrid img {
     width: 200px;
     height: 200px;
     border-radius: 50%;
-  }
-  .homePageIntroGrid .citation {
-    top: 180vw;
-    right: 40px;
-    font-family: "open-sans", "sans-serif";
   }
   .freshIngredientsArticle {
     margin-top: 230px;
@@ -902,6 +867,11 @@ footer div a {
   .freshIngredientsArticle p {
     width: 200px;
     font-size: 20px;
+  }
+  .freshIngredientsArticle .citation {
+    font-size: 10px;
+    margin-right: -620px;
+    width: 100px;
   }
   .freshIngredientsArticle img {
     width: 40vw;
@@ -921,7 +891,7 @@ footer div a {
   }
 }
 
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 1050px) {
   header {
     width: 75vw;
     -ms-grid-column-align: left;
@@ -932,7 +902,7 @@ footer div a {
     height: 30vw;
     position: absolute;
     right: 15vw;
-    top: 240px;
+    top: 230px;
     border-radius: 200px;
     z-index: 6;
     border: #1e2744 5px solid;
@@ -942,15 +912,16 @@ footer div a {
   .homePageImageMenu {
     display: inline-block;
   }
-  .homePageImageMenu .citation {
-    top: 230px;
+  .homePageImageMenu #verticalPastaCitation {
+    top: 280px;
     right: 22vw;
+    position: absolute;
     color: #ffede1;
     z-index: 7;
     width: 80px;
     font-size: 10px;
   }
-  .homePageImageMenu .citation a {
+  .homePageImageMenu #verticalPastaCitation a {
     color: #ffede1;
   }
   .homePageMargin {
@@ -976,34 +947,12 @@ footer div a {
     text-shadow: none;
     width: 180px;
   }
-  .homePageIntroGrid .introWords .roundIntroButtons {
-    left: 280px;
-    width: 150px;
-    height: 150px;
-    margin-top: -40px;
-  }
-  .homePageIntroGrid #restaurantIntro .roundIntroButtons {
-    left: 50px;
-  }
   .homePageIntroGrid img {
     width: 150px;
     height: 150px;
     border: #e2866d 5px solid;
     -webkit-transition: 0.5s all ease-in;
     transition: 0.5s all ease-in;
-  }
-  .homePageIntroGrid img:hover {
-    border: #1e2744 5px solid;
-  }
-  .homePageIntroGrid .citation {
-    top: 520px;
-    right: 0px;
-    font-family: "open-sans", "sans-serif";
-    color: #1e2744;
-    width: 200px;
-  }
-  .homePageIntroGrid .citation a {
-    color: #1e2744;
   }
   .freshIngredientsArticle {
     margin: 800px 0 100px -470px;
@@ -1032,16 +981,12 @@ footer div a {
     position: absolute;
     margin: 250px 0 80px;
   }
-  .freshIngredientsArticle .citation {
-    position: absolute;
-    left: 35vw;
-    top: 950px;
-    color: #ffede1;
-    font-size: 8px;
-    width: 100px;
+  #introMenuCitation {
+    color: #1e2744;
+    margin-bottom: -70px;
   }
-  .freshIngredientsArticle .citation a {
-    color: #ffede1;
+  #introMenuCitation a {
+    color: #1e2744;
   }
   .hoursMenu {
     width: 25vw;
@@ -1059,7 +1004,7 @@ footer div a {
     margin: 30px 0;
   }
   footer {
-    margin-top: 0;
+    margin-top: -20px;
   }
 }
 /*# sourceMappingURL=style.css.map */

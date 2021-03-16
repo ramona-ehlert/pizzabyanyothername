@@ -17,13 +17,9 @@
     @include centeredGrid;
 }
 .citation {
-    top: 260px;
-    color: $navy;
-    right: 20px;
-
-    text-shadow: none;
+    color: $cream;
     a {
-        color: $navy;
+        color: $cream;
     }
 }
 .homePageMargin {
@@ -32,6 +28,7 @@
     height: 150vw;
     background-color: #e2866d99;
 }
+
 .homePageIntroGrid {
     // padding: 10px;
     @include centeredGrid;
@@ -45,21 +42,10 @@
         color: $cream;
         font-size: 18px;
         text-shadow: 1px 1px 4px $red;
-        .roundIntroButtons {
-            position: absolute;
-            right: 50px;
-            width: 100px;
-            height: 100px;
-            margin-top: -15px;
-           
-        }
     }
 
     #restaurantIntro {
         text-align: right;
-        .roundIntroButtons {
-            left: 50px;
-        }
     }
     img {
         width: 100px;
@@ -96,17 +82,12 @@
         width: 100vw;
     }
     p {
-        color: $navy;
         width: 65%;
         margin: 35px 0px;
     }
     .citation {
-        position: absolute;
-        top: 1400px;
-        color: $cream;
-        a {
-            color: $cream;
-        }
+        margin-top: -50px;
+        position: relative;
     }
 }
 
@@ -116,7 +97,6 @@
             top: 40vw;
         }
     }
-   
 
     .homePageIntroGrid {
         width: 80%;
@@ -125,41 +105,27 @@
         .introWords {
             width: 240px;
             font-size: 28px;
-
-            .roundIntroButtons {
-                position: absolute;
-                right: 120px;
-                width: 220px;
-                height: 220px;
-            }
         }
 
-        #restaurantIntro {
-            .roundIntroButtons {
-                left: 160px;
-            }
-        }
         img {
             width: 200px;
             height: 200px;
             border-radius: 50%;
-        }
-
-        .citation {
-            top: 180vw;
-            right: 40px;
-            font-family: "open-sans", "sans-serif";
-            // width: 150px;
         }
     }
 
     .freshIngredientsArticle {
         margin-top: 230px;
         grid-template-columns: 1fr 1fr;
-        
+
         p {
             width: 200px;
             font-size: 20px;
+        }
+        .citation {
+            font-size: 10px;
+            margin-right: -620px;
+            width: 100px;
         }
         img {
             width: 40vw;
@@ -170,10 +136,9 @@
             position: absolute;
             top: 190vw;
             right: 0;
-            margin: 0 23vw ;
+            margin: 0 23vw;
             width: 54vw;
             hr {
-                
                 width: 80vw;
                 position: absolute;
                 margin: 250px 0 80px;
@@ -182,7 +147,7 @@
     }
 }
 
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 1050px) {
     header {
         width: 75vw;
         justify-self: left;
@@ -193,29 +158,30 @@
         // width: 20vw;
         position: absolute;
         right: 15vw;
-        top: 240px;
+        top: 230px;
         border-radius: 200px;
         z-index: 6;
         border: $navy 5px solid;
         max-height: 500px;
         max-width: 333.333333px;
     }
-// .citation {
-//     top: 230px;
-//         right: 270px;
-//         color: chartreuse;
-//         z-index: 7;
-//         width: 80px;
-//         font-size: 10px;
-//         a {
-//             color: $cream;
-//         }
-// }
+    // .citation {
+    //     top: 230px;
+    //         right: 270px;
+    //         color: chartreuse;
+    //         z-index: 7;
+    //         width: 80px;
+    //         font-size: 10px;
+    //         a {
+    //             color: $cream;
+    //         }
+    // }
     .homePageImageMenu {
         display: inline-block;
-        .citation {
-            top: 230px;
+        #verticalPastaCitation {
+            top: 280px;
             right: 22vw;
+            position: absolute;
             color: $cream;
             z-index: 7;
             width: 80px;
@@ -232,7 +198,7 @@
         bottom: 0;
         width: 25vw;
         height: 1300px;
-    //     opacity: 0;
+        //     opacity: 0;
     }
     .homePageIntroGrid {
         position: absolute;
@@ -243,59 +209,27 @@
         right: 60vw;
         z-index: 100;
         column-gap: 5vw;
+
         .introWords {
             color: $navy;
             text-shadow: none;
             width: 180px;
-            .roundIntroButtons {
-                
-                left: 280px;
-                width: 150px;
-                height: 150px;
-                margin-top: -40px;
-               
-            }}
-            #restaurantIntro {
-                
-                .roundIntroButtons {
-                    left: 50px;
-                }
-            }
-        
+        }
+
         img {
             width: 150px;
             height: 150px;
             border: $red 5px solid;
             transition: 0.5s all ease-in;
-
-            &:hover {
-                border: $navy 5px solid;
-            }
         }
-        
-
-        .citation {
-            top: 520px;
-            right: 0px;
-            font-family: "open-sans", "sans-serif";
-            color: $navy;
-            width: 200px;
-
-            a {
-                color: $navy;
-            }
-            
-        }
-       
     }
-  
+    
+
     .freshIngredientsArticle {
-        
         margin: 800px 0 100px -470px;
         grid-template-columns: 1fr 1fr;
         width: 40vw;
-        
-        
+
         p {
             width: 200px;
             font-size: 20px;
@@ -313,25 +247,21 @@
             margin: 0 40vw 0 10vw;
             width: 50vw;
             hr {
-                
                 width: 60vw;
                 position: absolute;
                 margin: 250px 0 80px;
             }
         }
-        .citation {
-            position: absolute;
-            left: 35vw;
-            top: 950px;
-            color: $cream;
-            font-size: 8px;
-            width: 100px;
-            a {
-                color: $cream;
-            }}
+
+    }
+    #introMenuCitation {
+        color: $navy;
+        margin-bottom: -70px;
+        a {
+            color: $navy;
+        }
     }
     .hoursMenu {
- 
         width: 25vw;
         height: 600px;
         z-index: 5;
@@ -344,10 +274,9 @@
         }
         h3 {
             margin: 30px 0;
-          
         }
     }
     footer {
-        margin-top: 0;
+        margin-top: -20px;
     }
 }

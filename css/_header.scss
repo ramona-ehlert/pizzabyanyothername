@@ -182,16 +182,15 @@
         }
         a {
             font-size: 24px;
-            
             text-decoration: none;
             
         
         }
-        &:nth-child(2){
-            pointer-events: none;
-            }
+        
     }
-
+#phoneNumber {
+    pointer-events: none;
+}
     .headerLogo {
         // margin-right: -300px;
         img {
@@ -260,7 +259,7 @@
         }
     }
 }
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 1050px) {
     header {
         width: 100vw;
         height: 200px;
@@ -278,7 +277,9 @@
         width: 260px;
         a {
             font-size: 24px;
+            
         }
+     
         img {
             
             height: 50px;

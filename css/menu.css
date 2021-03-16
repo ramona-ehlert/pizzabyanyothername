@@ -331,7 +331,7 @@ a, p {
     font-size: 24px;
     text-decoration: none;
   }
-  .MobileContactPhone:nth-child(2) {
+  #phoneNumber {
     pointer-events: none;
   }
   .headerLogo img {
@@ -389,7 +389,7 @@ a, p {
   }
 }
 
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 1050px) {
   header {
     width: 100vw;
     height: 200px;
@@ -707,7 +707,11 @@ a, p {
 }
 
 .titleContainer .citation {
-  margin-top: 0px;
+  position: absolute;
+  top: 0px;
+  left: 5px;
+  color: #ffede1;
+  right: 0;
 }
 
 .titleContainer .citation a {
@@ -754,42 +758,10 @@ a, p {
   }
 }
 
-@media only screen and (min-width: 1000px) {
-  .imageSpace {
-    height: 80vh;
-    min-height: 700px;
-  }
-  .caroCard {
-    display: -ms-grid;
-    display: grid;
-    justify-items: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .caroCard img {
-    height: 70vh;
-    min-height: 600px;
-    width: 290%;
-    opacity: .6;
-    margin-top: 80px;
-  }
-  .titleContainer h3 {
-    font-size: 2em;
-    margin-top: 10px;
-  }
-  .titleContainer h4 {
-    font-size: 1.5em;
-    margin-bottom: 100px;
-  }
-  .titleContainer p {
-    margin: 60% 0 0 -100px;
-    font-size: 3em;
-    width: 500px;
-  }
-  .titleContainer .citation {
-    font-size: 12px;
-    margin-top: 20px;
+@media only screen and (min-width: 1050px) {
+  .carousel {
+    width: 40vw;
+    margin: 0 30vw;
   }
 }
 
@@ -814,11 +786,16 @@ a, p {
 }
 
 .banner .citation {
-  color: #CFDBD1;
+  color: #ffede1;
+  margin: -40px 0 0 140px;
 }
 
 .banner .citation a {
-  color: #CFDBD1;
+  color: #ffede1;
+}
+
+header .headerGrid .desktopNav a {
+  z-index: 10;
 }
 
 .InnerMenuNavigation {
@@ -965,6 +942,8 @@ a, p {
 .menuCard .menuCardDescription {
   text-align: center;
   padding: 10px;
+  height: 70px;
+  margin-bottom: 20px;
 }
 
 .menuCard .menuCardDescription p {
@@ -1085,7 +1064,7 @@ a, p {
 
 #ageYesCheckbox {
   z-index: 20;
-  position: absolute;
+  position: fixed;
   top: 45%;
   right: 35%;
   left: 35%;
@@ -1103,6 +1082,9 @@ a, p {
 }
 
 @media only screen and (min-width: 600px) {
+  .banner .citation {
+    margin: -60px 0 0 440px;
+  }
   .InnerMenuNavigation .InnerMenuNavigationButton {
     border-radius: 100px;
     height: 180px;
@@ -1138,8 +1120,15 @@ a, p {
   .menuDisplay .hr {
     margin: 0px 30px 40px;
   }
+  #pizzaSizes {
+    margin-left: 50px;
+    margin-bottom: 10px;
+  }
   .menuCard h4 {
     font-size: 1.5em;
+  }
+  .menuCard .menuCardDescription {
+    margin-bottom: 20px;
   }
   .menuCard .menuCardDescription p {
     font-size: 16px;
@@ -1168,10 +1157,11 @@ a, p {
   }
   #ageYesCheckbox {
     height: 60px;
+    top: 45%;
   }
 }
 
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 1050px) {
   header {
     margin: 0;
   }
@@ -1186,26 +1176,36 @@ a, p {
   .banner img {
     width: 100vw;
   }
+  .banner .citation {
+    color: #1e2744;
+    margin: 10px 0 0 0;
+  }
+  .banner .citation a {
+    color: #1e2744;
+  }
   .InnerMenuNavigation {
     margin-bottom: 20vw;
   }
   .InnerMenuNavigation .InnerMenuNavigationButton {
-    -webkit-transition: all 0.8s ease-in-out;
-    transition: all 0.8s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
   }
   .InnerMenuNavigation .InnerMenuNavigationButton p {
     -webkit-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
   }
   .InnerMenuNavigation .InnerMenuNavigationButton:hover {
-    background-color: #1e2744;
-    -webkit-transition: all 0.8s ease-in-out;
-    transition: all 0.8s ease-in-out;
+    -webkit-box-shadow: 0px 0px 15px #1e2744;
+            box-shadow: 0px 0px 15px #1e2744;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
   }
-  .InnerMenuNavigation .InnerMenuNavigationButton:hover p {
-    color: #fdf5ed;
-    -webkit-transition: all 0.8s ease-in-out;
-    transition: all 0.8s ease-in-out;
+  #pizzaSizes {
+    margin-left: 7vw;
+    margin-bottom: 20px;
+  }
+  .menuCard {
+    padding-top: 10px;
   }
   .menuCard img {
     margin: 10px;
@@ -1240,6 +1240,7 @@ a, p {
   .menuItemGrid .menuCard .menuCardDescription {
     position: relative;
     margin-top: -20px;
+    margin-bottom: 0;
     text-align: center;
     -webkit-transition: all 1s ease-in;
     transition: all 1s ease-in;
@@ -1280,7 +1281,7 @@ a, p {
   .drinkMenuDisplay {
     border: 10px #1e2744 double;
     width: 80%;
-    margin: 0 10%;
+    margin: 0 10% 120px;
     padding: 40px 0;
   }
   .drinkMenuDisplay section h2 {
@@ -1300,8 +1301,20 @@ a, p {
   .drinkMenuPermissionBackground .ageYesButton {
     top: 320px;
   }
+  .drinkMenuPermissionBackground .ageYesButton:hover {
+    background-color: #CFDBD1;
+  }
   .drinkMenuPermissionBackground .ageNoButton {
     top: 450px;
+  }
+  .drinkMenuPermissionBackground .ageNoButton:hover {
+    background-color: #EBAA98;
+  }
+  #ageYesCheckbox {
+    top: 320px;
+  }
+  #ageYesCheckbox:hover ~ .drinkMenuPermissionBackground .ageYesButton {
+    background-color: #CFDBD1;
   }
 }
 /*# sourceMappingURL=menu.css.map */

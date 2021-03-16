@@ -331,7 +331,7 @@ a, p {
     font-size: 24px;
     text-decoration: none;
   }
-  .MobileContactPhone:nth-child(2) {
+  #phoneNumber {
     pointer-events: none;
   }
   .headerLogo img {
@@ -389,7 +389,7 @@ a, p {
   }
 }
 
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 1050px) {
   header {
     width: 100vw;
     height: 200px;
@@ -789,7 +789,13 @@ a, p {
 
 @media only screen and (min-width: 600px) {
   .locationGrid {
-    margin: 0 10%;
+    margin: 10% 10%;
+    width: 80%;
+  }
+  .locationGrid iframe {
+    width: 100%;
+    padding: 0;
+    margin: 0 0 50px;
   }
   .address {
     -ms-grid-columns: 1fr 1fr;
@@ -813,7 +819,7 @@ a, p {
   }
 }
 
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 1050px) {
   header {
     margin: 0;
   }
