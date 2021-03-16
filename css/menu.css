@@ -8,16 +8,20 @@
 }
 
 body {
-  font-family: 'Belleza', sans-serif;
+  font-family: "Belleza", sans-serif;
   background-color: #ffede1;
 }
 
-h1, h2, h3, h4 {
-  font-family: 'Open Sans', 'sans-serif';
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Open Sans", sans-serif;
   color: #1e2744;
 }
 
-a, p {
+a,
+p {
   color: #1e2744;
 }
 
@@ -25,7 +29,7 @@ a, p {
   z-index: 3;
   margin-bottom: -20px;
   font-size: 8px;
-  font-family: 'open-sans', 'sans-serif';
+  font-family: "open-sans", sans-serif;
 }
 
 .citation a {
@@ -51,16 +55,20 @@ a, p {
 }
 
 body {
-  font-family: 'Belleza', sans-serif;
+  font-family: "Belleza", sans-serif;
   background-color: #ffede1;
 }
 
-h1, h2, h3, h4 {
-  font-family: 'Open Sans', 'sans-serif';
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Open Sans", sans-serif;
   color: #1e2744;
 }
 
-a, p {
+a,
+p {
   color: #1e2744;
 }
 
@@ -68,7 +76,7 @@ a, p {
   z-index: 3;
   margin-bottom: -20px;
   font-size: 8px;
-  font-family: 'open-sans', 'sans-serif';
+  font-family: "open-sans", sans-serif;
 }
 
 .citation a {
@@ -525,16 +533,20 @@ a, p {
 }
 
 body {
-  font-family: 'Belleza', sans-serif;
+  font-family: "Belleza", sans-serif;
   background-color: #ffede1;
 }
 
-h1, h2, h3, h4 {
-  font-family: 'Open Sans', 'sans-serif';
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Open Sans", sans-serif;
   color: #1e2744;
 }
 
-a, p {
+a,
+p {
   color: #1e2744;
 }
 
@@ -542,7 +554,7 @@ a, p {
   z-index: 3;
   margin-bottom: -20px;
   font-size: 8px;
-  font-family: 'open-sans', 'sans-serif';
+  font-family: "open-sans", sans-serif;
 }
 
 .citation a {
@@ -573,8 +585,8 @@ footer {
   height: 60px;
   width: 100%;
   margin-top: 20px;
-  -webkit-box-shadow: 0px -2px 5px #CFDBD1;
-          box-shadow: 0px -2px 5px #CFDBD1;
+  -webkit-box-shadow: 0px -2px 5px #cfdbd1;
+          box-shadow: 0px -2px 5px #cfdbd1;
 }
 
 footer p {
@@ -602,16 +614,20 @@ footer div a {
 }
 
 body {
-  font-family: 'Belleza', sans-serif;
+  font-family: "Belleza", sans-serif;
   background-color: #ffede1;
 }
 
-h1, h2, h3, h4 {
-  font-family: 'Open Sans', 'sans-serif';
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Open Sans", sans-serif;
   color: #1e2744;
 }
 
-a, p {
+a,
+p {
   color: #1e2744;
 }
 
@@ -619,7 +635,7 @@ a, p {
   z-index: 3;
   margin-bottom: -20px;
   font-size: 8px;
-  font-family: 'open-sans', 'sans-serif';
+  font-family: "open-sans", sans-serif;
 }
 
 .citation a {
@@ -780,7 +796,7 @@ a, p {
 
 .banner h2 {
   font-size: 3em;
-  font-family: "Belleza", "sans-serif";
+  font-family: "Belleza", sans-serif;
   color: #1e2744;
   margin-top: 20px;
 }
@@ -925,10 +941,10 @@ header .headerGrid .desktopNav a {
 }
 
 .menuCard h4 {
-  color: #CFDBD1;
+  color: #cfdbd1;
   padding-top: 10px;
   font-size: smaller;
-  font-family: "open-sans", "sans-serif";
+  font-family: "open-sans";
   text-align: center;
 }
 
@@ -953,7 +969,7 @@ header .headerGrid .desktopNav a {
 }
 
 .menuCard > p {
-  color: #CFDBD1;
+  color: #cfdbd1;
   padding-bottom: 20px;
 }
 
@@ -1302,7 +1318,7 @@ header .headerGrid .desktopNav a {
     top: 320px;
   }
   .drinkMenuPermissionBackground .ageYesButton:hover {
-    background-color: #CFDBD1;
+    background-color: #cfdbd1;
   }
   .drinkMenuPermissionBackground .ageNoButton {
     top: 450px;
@@ -1314,7 +1330,7 @@ header .headerGrid .desktopNav a {
     top: 320px;
   }
   #ageYesCheckbox:hover ~ .drinkMenuPermissionBackground .ageYesButton {
-    background-color: #CFDBD1;
+    background-color: #cfdbd1;
   }
 }
 /*# sourceMappingURL=menu.css.map */

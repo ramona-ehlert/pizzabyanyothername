@@ -46,8 +46,6 @@
 .citation {
     color: $cream;
     position: relative;
-    // top: 420px;
-    // right: 35px;
     width: 100px;
     margin-top: -90px;
     margin-left: -70px;
@@ -97,7 +95,6 @@
     .hoursMenu {
         width: 350px;
         margin-left: 50px;
-        // margin-top: 20px;
     }
     .address {
         .citation {
@@ -105,8 +102,6 @@
         }
     }
     .locationGrid {
-        // row-gap: 20px;
-
         grid-template-columns: 1fr 1fr;
         iframe {
             width: 400px;

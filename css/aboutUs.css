@@ -7,16 +7,20 @@
 }
 
 body {
-  font-family: 'Belleza', sans-serif;
+  font-family: "Belleza", sans-serif;
   background-color: #ffede1;
 }
 
-h1, h2, h3, h4 {
-  font-family: 'Open Sans', 'sans-serif';
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Open Sans", sans-serif;
   color: #1e2744;
 }
 
-a, p {
+a,
+p {
   color: #1e2744;
 }
 
@@ -24,7 +28,7 @@ a, p {
   z-index: 3;
   margin-bottom: -20px;
   font-size: 8px;
-  font-family: 'open-sans', 'sans-serif';
+  font-family: "open-sans", sans-serif;
 }
 
 .citation a {
@@ -50,16 +54,20 @@ a, p {
 }
 
 body {
-  font-family: 'Belleza', sans-serif;
+  font-family: "Belleza", sans-serif;
   background-color: #ffede1;
 }
 
-h1, h2, h3, h4 {
-  font-family: 'Open Sans', 'sans-serif';
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Open Sans", sans-serif;
   color: #1e2744;
 }
 
-a, p {
+a,
+p {
   color: #1e2744;
 }
 
@@ -67,7 +75,7 @@ a, p {
   z-index: 3;
   margin-bottom: -20px;
   font-size: 8px;
-  font-family: 'open-sans', 'sans-serif';
+  font-family: "open-sans", sans-serif;
 }
 
 .citation a {
@@ -524,16 +532,20 @@ a, p {
 }
 
 body {
-  font-family: 'Belleza', sans-serif;
+  font-family: "Belleza", sans-serif;
   background-color: #ffede1;
 }
 
-h1, h2, h3, h4 {
-  font-family: 'Open Sans', 'sans-serif';
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Open Sans", sans-serif;
   color: #1e2744;
 }
 
-a, p {
+a,
+p {
   color: #1e2744;
 }
 
@@ -541,7 +553,7 @@ a, p {
   z-index: 3;
   margin-bottom: -20px;
   font-size: 8px;
-  font-family: 'open-sans', 'sans-serif';
+  font-family: "open-sans", sans-serif;
 }
 
 .citation a {
@@ -572,8 +584,8 @@ footer {
   height: 60px;
   width: 100%;
   margin-top: 20px;
-  -webkit-box-shadow: 0px -2px 5px #CFDBD1;
-          box-shadow: 0px -2px 5px #CFDBD1;
+  -webkit-box-shadow: 0px -2px 5px #cfdbd1;
+          box-shadow: 0px -2px 5px #cfdbd1;
 }
 
 footer p {
@@ -625,7 +637,7 @@ article h2 {
 article img {
   width: 80%;
   border-radius: 10%;
-  border: 4px solid #CFDBD1;
+  border: 4px solid #cfdbd1;
   margin: 10px;
 }
 
@@ -634,7 +646,7 @@ article p {
 }
 
 .video {
-  background-color: #CFDBD1;
+  background-color: #cfdbd1;
   display: -ms-grid;
   display: grid;
   justify-items: center;
@@ -654,7 +666,7 @@ article p {
 .citation {
   position: relative;
   margin-bottom: -30px;
-  margin-left: 200px;
+  margin-left: 100px;
 }
 
 footer {
@@ -696,7 +708,7 @@ footer {
   .banner {
     position: absolute;
     z-index: -5;
-    opacity: .34;
+    opacity: 0.34;
   }
   article {
     padding: 0px 100px 20px;

@@ -31,7 +31,6 @@
 
     #mobile-menu-checkbox:checked ~ #mobile-hamburger-container {
         transition: all 0.7s ease-in-out;
-
         .mobile-hamburger-line {
             transition: all 0.7s ease-in-out;
             z-index: 12;
@@ -50,9 +49,7 @@
         @include centeredGrid;
         width: 50px;
         height: 50px;
-
         position: relative;
-
         .mobile-hamburger-line {
             width: 40px;
             height: 4px;
@@ -68,12 +65,12 @@
         height: 100vh;
         padding-top: 20px;
         background-color: #A0B7A4;
+        //The darker green for the hamburger menu is a creative choice not a bug.
         top: -130vh;
         opacity: 1;
         left: 0;
         z-index: 11;
         min-height: 500px;
-        // padding: 20px;
         nav {
             display: grid;
             margin-left: 30px;
@@ -81,7 +78,6 @@
             a {
                 margin: 2vh 20px;
                 color: $cream;
-                // text-shadow: 2px 2px 2px $navy;
                 text-decoration: none;
                 font-size: 20px;
             }
@@ -124,13 +120,6 @@
     }
 }
 
-// .banner {
-//     img {
-//         width: 100vw;
-//         // opacity: 70%;
-
-//     }
-// }
 .pageContainer {
     @include centeredGrid;
 }
@@ -139,8 +128,6 @@
     bottom: 60px;
     left: 25px;
     @include centeredGrid;
-    
-    
     }
 .socialmediaGrid {
         padding: 20px;
@@ -148,11 +135,9 @@
         grid-template-columns: 1fr 1fr 1fr;
         column-gap: 30px;
         img {
-            height: 30px;
-            
+            height: 30px;       
         }
         a {
-            // background-color: crimson;
             height: 30px;
             width: 30px;
             margin-bottom: -30px;
@@ -172,7 +157,8 @@
             margin-left: -15px;
         }
     }
-@media only screen and (min-width: 600px) {
+
+    @media only screen and (min-width: 600px) {
     .MobileContactPhone {
         width: 250px;
         height: 50px;
@@ -182,9 +168,7 @@
         }
         a {
             font-size: 24px;
-            text-decoration: none;
-            
-        
+            text-decoration: none;        
         }
         
     }
@@ -226,7 +210,6 @@
                 margin-left: 60px;
                 margin-top: 100px;
                 display: grid;
-                // padding-left: 40px;
 
                 a {
                     font-size: 28px;
@@ -298,11 +281,9 @@
             row-gap: 30px;
             column-gap: 0;
             a {
-                // background-color: crimson;
                 margin-right: -100px;
                 width: 80px;
                 height: 80px;
-                // padding: 10px;
             }
         }
 
@@ -337,8 +318,6 @@
             font-size: 22px;
             text-decoration: none; 
             &:hover {
-            
-            // transition: 0.5s all ease-in;
             color: $red;
         }
         }
@@ -387,6 +366,5 @@
         height: 1300px;
         background-color: #e2866d99;
         display: block;
-        //     opacity: 0;
     }
 }
