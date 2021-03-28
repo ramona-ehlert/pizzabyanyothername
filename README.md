@@ -1,2 +1,2 @@
 # pizzabyanyothername
-https://morefueltoyourstonefire.tk/
+https://sweetpizzaheat.tk/
